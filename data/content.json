@@ -1,0 +1,1949 @@
+{
+  "profile": {
+    "name": {
+      "en": "Zhailoobek Tukubaev",
+      "ru": "Жайлообек Тукубаев",
+      "ky": "Жайлообек Тукубаев"
+    },
+    "fullName": {
+      "en": "Zhailoobek Akylovich Tukubaev",
+      "ru": "Тукубаев Жайлообек Акылович",
+      "ky": "Тукубаев Жайлообек Акылович"
+    },
+    "headline": {
+      "en": "GIS & Geospatial Expert",
+      "ru": "Эксперт по ГИС и геопространственным данным",
+      "ky": "ГМС жана геомейкиндик маалыматтар боюнча эксперт"
+    },
+    "roles": [
+      "GIS Expert",
+      "Geospatial Analyst",
+      "Land Surveyor",
+      "Remote Sensing Specialist",
+      "Web GIS Developer"
+    ],
+    "tagline": {
+      "en": "14 Years of Experience in GIS, Geospatial Analysis and Land Surveying.",
+      "ru": "14 лет опыта в геоинформационных технологиях, геодезии и управлении пространственными данными.",
+      "ky": "Геомаалыматтык технологияларда, геодезияда жана мейкиндик маалыматтарды башкарууда 14 жылдык тажрыйба."
+    },
+    "subtitle": {
+      "en": "Transforming Geospatial Data into Intelligent Mapping and Decision-Making Solutions.",
+      "ru": "Превращаю геопространственные данные в интеллектуальные карты и решения для принятия управленческих решений.",
+      "ky": "Геомейкиндик маалыматтарды акылдуу карталарга жана чечим кабыл алуу үчүн куралдарга айлантам."
+    },
+    "bio": {
+      "en": "I am a Geographic Information Systems specialist with 14 years of experience in land surveying and land management, cadastre, cartography and spatial analysis. I graduated in Land Management from the Kyrgyz National Agrarian University named after K.I. Skryabin in 2012 and have worked with spatial data ever since.\n\nMy work covers water and land resources management, the creation of GIS databases, thematic mapping, remote sensing and the development and testing of interactive GIS solutions. I have prepared maps and schemes for river basin plans, atlases of pilot river basins, a digital land-use map of Kyrgyzstan and digital cartographic materials for the national land fund inventory.\n\nI have worked in state organizations of the Kyrgyz Republic and taken part in projects financed or implemented by the World Bank, FAO, UNDP and the Regional Environmental Centre for Central Asia.",
+      "ru": "Я специалист по геоинформационным системам с 14-летним опытом работы в области геодезии, землеустройства, кадастра, картографии и пространственного анализа. В 2012 году окончил Кыргызский национальный аграрный университет имени К.И. Скрябина по специальности «Землеустройство» и с тех пор работаю с пространственными данными.\n\nИмею опыт реализации проектов, связанных с управлением водными и земельными ресурсами, созданием геоинформационных баз данных, тематическим картографированием, дистанционным зондированием и разработкой и тестированием интерактивных ГИС-решений. Готовил карты и схемы для бассейновых планов, атласы пилотных речных бассейнов, цифровую карту землепользования Кыргызстана и цифровые картографические материалы для инвентаризации земельного фонда.\n\nРаботал в государственных организациях Кыргызской Республики и участвовал в проектах, финансируемых или реализуемых Всемирным банком, ФАО, ПРООН и Региональным экологическим центром Центральной Азии.",
+      "ky": "Мен геодезия, жерге жайгаштыруу, кадастр, картография жана мейкиндик талдоо тармагында 14 жылдык тажрыйбасы бар географиялык маалымат системалары боюнча адиспин. 2012-жылы К.И. Скрябин атындагы Кыргыз улуттук агрардык университетин «Жерге жайгаштыруу» адистиги боюнча бүтүрүп, ошондон бери мейкиндик маалыматтар менен иштеп келем.\n\nСуу жана жер ресурстарын башкаруу, геомаалыматтык базаларды түзүү, тематикалык картографиялоо, Жерди алыстан зонддоо, ошондой эле интерактивдүү ГМС чечимдерин иштеп чыгуу жана сыноо боюнча долбоорлордо тажрыйбам бар. Бассейндик пландар үчүн карталарды жана схемаларды, пилоттук дарыя бассейндеринин атластарын, Кыргызстандын жерди пайдалануу санариптик картасын жана жер фондун инвентаризациялоо үчүн санариптик картографиялык материалдарды даярдадым.\n\nКыргыз Республикасынын мамлекеттик уюмдарында иштеп, Дүйнөлүк банк, ФАО, БУУӨП жана Борбордук Азиянын Аймактык экологиялык борбору каржылаган же ишке ашырган долбоорлорго катыштым."
+    },
+    "specializations": {
+      "en": [
+        "Geographic information systems and spatial analysis",
+        "Land management, land inventory and cadastre",
+        "Thematic and digital cartography",
+        "Remote sensing and land-use mapping",
+        "UAV aerial survey and orthophoto processing",
+        "GIS databases and spatial data management",
+        "Water resources and river basin planning",
+        "Web GIS and quality control of GIS applications"
+      ],
+      "ru": [
+        "Геоинформационные системы и пространственный анализ",
+        "Землеустройство, инвентаризация земель и кадастр",
+        "Тематическая и цифровая картография",
+        "Дистанционное зондирование и картографирование землепользования",
+        "Аэрофотосъёмка с БПЛА и обработка ортофотоматериалов",
+        "Геобазы данных и управление пространственными данными",
+        "Водные ресурсы и бассейновое планирование",
+        "Web GIS и контроль качества ГИС-приложений"
+      ],
+      "ky": [
+        "Географиялык маалымат системалары жана мейкиндик талдоо",
+        "Жерге жайгаштыруу, жерлерди инвентаризациялоо жана кадастр",
+        "Тематикалык жана санариптик картография",
+        "Жерди алыстан зонддоо жана жерди пайдаланууну картага түшүрүү",
+        "Учкучсуз аппараттар менен аэросүрөткө тартуу жана ортофото иштетүү",
+        "Геомаалымат базалары жана мейкиндик маалыматтарды башкаруу",
+        "Суу ресурстары жана бассейндик пландоо",
+        "Web GIS жана ГМС тиркемелеринин сапатын көзөмөлдөө"
+      ]
+    },
+    "location": {
+      "en": "Kyrgyz Republic",
+      "ru": "Кыргызская Республика",
+      "ky": "Кыргыз Республикасы"
+    },
+    "careerStartYear": 2012,
+    "photo": "",
+    "cvFile": "",
+    "languages": [
+      {
+        "name": {
+          "en": "Kyrgyz",
+          "ru": "Кыргызский",
+          "ky": "Кыргыз тили"
+        },
+        "level": {
+          "en": "Native",
+          "ru": "Родной",
+          "ky": "Эне тили"
+        }
+      },
+      {
+        "name": {
+          "en": "Russian",
+          "ru": "Русский",
+          "ky": "Орус тили"
+        },
+        "level": {
+          "en": "Excellent",
+          "ru": "Отлично",
+          "ky": "Эң жакшы"
+        }
+      },
+      {
+        "name": {
+          "en": "English",
+          "ru": "Английский",
+          "ky": "Англис тили"
+        },
+        "level": {
+          "en": "Good",
+          "ru": "Хорошо",
+          "ky": "Жакшы"
+        }
+      }
+    ],
+    "highlights": [
+      {
+        "title": {
+          "en": "{years}+ years",
+          "ru": "{years}+ лет",
+          "ky": "{years}+ жыл"
+        },
+        "text": {
+          "en": "Professional experience since 2012",
+          "ru": "Профессионального опыта с 2012 года",
+          "ky": "2012-жылдан бери кесиптик тажрыйба"
+        }
+      },
+      {
+        "title": {
+          "en": "Government & international",
+          "ru": "Госсектор и международные проекты",
+          "ky": "Мамлекеттик жана эл аралык"
+        },
+        "text": {
+          "en": "State agencies of the Kyrgyz Republic; projects with the World Bank, FAO, UNDP and REC CA",
+          "ru": "Госорганы Кыргызской Республики; проекты Всемирного банка, ФАО, ПРООН и РЭЦЦА",
+          "ky": "КР мамлекеттик органдары; Дүйнөлүк банк, ФАО, БУУӨП жана БААЭБ долбоорлору"
+        }
+      },
+      {
+        "title": {
+          "en": "GIS · Remote Sensing · Cadastre",
+          "ru": "ГИС · ДЗЗ · Кадастр",
+          "ky": "ГМС · ЖАЗ · Кадастр"
+        },
+        "text": {
+          "en": "Spatial analysis, land-use mapping, land inventory",
+          "ru": "Пространственный анализ, карты землепользования, инвентаризация земель",
+          "ky": "Мейкиндик талдоо, жерди пайдалануу карталары, жерлерди инвентаризациялоо"
+        }
+      },
+      {
+        "title": {
+          "en": "Geodata & cartography",
+          "ru": "Геоданные и картография",
+          "ky": "Геомаалымат жана картография"
+        },
+        "text": {
+          "en": "Geodatabases, thematic maps, basin plan maps and atlases",
+          "ru": "Геобазы, тематические карты, карты бассейновых планов и атласы",
+          "ky": "Геобазалар, тематикалык карталар, бассейндик пландардын карталары жана атластар"
+        }
+      }
+    ]
+  },
+  "contacts": {
+    "email": "jailoobek.kg@gmail.com",
+    "phone": "+996 501 177 111",
+    "whatsapp": "+996 501 177 111",
+    "telegram": "",
+    "linkedin": "",
+    "github": ""
+  },
+  "experience": [
+    {
+      "id": "exp-undp-2025",
+      "start": "2025-02",
+      "end": "2025-04",
+      "organization": {
+        "en": "UNDP — Aid for Trade in Central Asia project (phase V)",
+        "ru": "ПРООН — проект «Содействие торговле в Центральной Азии» (фаза V)",
+        "ky": "БУУӨП — «Борбордук Азияда соодага көмөк көрсөтүү» долбоору (V фаза)"
+      },
+      "position": {
+        "en": "National Consultant (digital map of the State Border Service)",
+        "ru": "Национальный консультант (цифровая карта Государственной пограничной службы)",
+        "ky": "Улуттук консультант (Мамлекеттик чек ара кызматынын санариптик картасы)"
+      },
+      "location": {
+        "en": "Bishkek, Kyrgyz Republic",
+        "ru": "Бишкек, Кыргызская Республика",
+        "ky": "Бишкек, Кыргыз Республикасы"
+      },
+      "details": {
+        "en": [
+          "Individual contract, February–April 2025 (40 person-days)",
+          "Trilingual digital map of border-regime rules for the State Border Service and the Department of Tourism"
+        ],
+        "ru": [
+          "Индивидуальный контракт, февраль–апрель 2025 г. (40 человеко-дней)",
+          "Трёхъязычная цифровая карта правил пограничного режима для ГПС КР и Департамента туризма"
+        ],
+        "ky": [
+          "Жеке келишим, 2025-жылдын февраль–апрели (40 адам-күн)",
+          "МЧК жана Туризм департаменти үчүн чек ара режиминин эрежелеринин үч тилдүү санариптик картасы"
+        ]
+      },
+      "projectSlug": "undp-digital-border-map",
+      "published": true
+    },
+    {
+      "id": "exp-ton-2024",
+      "start": "2024-01",
+      "end": "2026-07",
+      "organization": {
+        "en": "Ton District Branch of the State Agency for Land Resources, Cadastre, Geodesy and Cartography under the Cabinet of Ministers of the Kyrgyz Republic",
+        "ru": "Тонский районный филиал Государственного агентства по земельным ресурсам, кадастру, геодезии и картографии при Кабинете Министров Кыргызской Республики",
+        "ky": "Кыргыз Республикасынын Министрлер Кабинетине караштуу Жер ресурстары, кадастр, геодезия жана картография боюнча мамлекеттик агенттигинин Тоң райондук филиалы"
+      },
+      "position": {
+        "en": "GIS Specialist",
+        "ru": "ГИС-специалист",
+        "ky": "ГМС адиси"
+      },
+      "location": {
+        "en": "Ton District, Kyrgyz Republic",
+        "ru": "Тонский район, Кыргызская Республика",
+        "ky": "Тоң району, Кыргыз Республикасы"
+      },
+      "details": {
+        "en": [],
+        "ru": [],
+        "ky": []
+      },
+      "projectSlug": "",
+      "published": true
+    },
+    {
+      "id": "exp-swra-2020",
+      "start": "2020-07",
+      "end": "2023-12",
+      "organization": {
+        "en": "State Water Resources Agency under the Ministry of Agriculture of the Kyrgyz Republic",
+        "ru": "Государственное агентство водных ресурсов при Министерстве сельского хозяйства Кыргызской Республики",
+        "ky": "Кыргыз Республикасынын Айыл чарба министрлигине караштуу Мамлекеттик суу ресурстары агенттиги"
+      },
+      "position": {
+        "en": "GIS Specialist",
+        "ru": "ГИС-специалист",
+        "ky": "ГМС адиси"
+      },
+      "location": {
+        "en": "Kyrgyz Republic",
+        "ru": "Кыргызская Республика",
+        "ky": "Кыргыз Республикасы"
+      },
+      "details": {
+        "en": [
+          "Additional Financing for the National Water Resources Management Project (World Bank)",
+          "Maps and schemes for River Basin Plans, thematic maps, data quality control"
+        ],
+        "ru": [
+          "Дополнительное финансирование Национального проекта по управлению водными ресурсами (Всемирный банк)",
+          "Карты и схемы для бассейновых планов, тематические карты, контроль качества данных"
+        ],
+        "ky": [
+          "Суу ресурстарын башкаруу боюнча улуттук долбоорду кошумча каржылоо (Дүйнөлүк банк)",
+          "Бассейндик пландар үчүн карталар жана схемалар, тематикалык карталар, маалыматтардын сапатын көзөмөлдөө"
+        ]
+      },
+      "projectSlug": "nwrmp-additional-financing",
+      "published": true
+    },
+    {
+      "id": "exp-fao-kgpz-2020",
+      "start": "2020-04",
+      "end": "2020-10",
+      "organization": {
+        "en": "FAO / Kyrgyzgiprozem SPI",
+        "ru": "ФАО / ГПИ «Кыргызгипрозем»",
+        "ky": "ФАО / «Кыргызгипрозем» МДИ"
+      },
+      "position": {
+        "en": "GIS Expert",
+        "ru": "ГИС-эксперт",
+        "ky": "ГМС эксперти"
+      },
+      "location": {
+        "en": "Kyrgyz Republic",
+        "ru": "Кыргызская Республика",
+        "ky": "Кыргыз Республикасы"
+      },
+      "details": {
+        "en": [
+          "Geodatabase creation and management, digitising of land-use maps, support and training of GIS specialists"
+        ],
+        "ru": [
+          "Создание и ведение геобазы данных, оцифровка карт землепользования, поддержка и обучение ГИС-специалистов"
+        ],
+        "ky": [
+          "Геомаалымат базасын түзүү жана жүргүзүү, жерди пайдалануу карталарын санариптештирүү, ГМС адистерин колдоо жана окутуу"
+        ]
+      },
+      "projectSlug": "fao-integrated-natural-resource-management",
+      "published": true
+    },
+    {
+      "id": "exp-rec-2020",
+      "start": "2020-03",
+      "end": "2020-08",
+      "organization": {
+        "en": "Kyrgyz Branch of the Regional Environmental Centre for Central Asia",
+        "ru": "Кыргызский филиал Регионального экологического центра Центральной Азии",
+        "ky": "Борбордук Азиянын Аймактык экологиялык борборунун Кыргыз филиалы"
+      },
+      "position": {
+        "en": "GIS Specialist",
+        "ru": "ГИС-специалист",
+        "ky": "ГМС адиси"
+      },
+      "location": {
+        "en": "Kyrgyz Republic",
+        "ru": "Кыргызская Республика",
+        "ky": "Кыргыз Республикасы"
+      },
+      "details": {
+        "en": [
+          "Maps and atlases for pilot river basins"
+        ],
+        "ru": [
+          "Карты и атласы пилотных речных бассейнов"
+        ],
+        "ky": [
+          "Пилоттук дарыя бассейндеринин карталары жана атластары"
+        ]
+      },
+      "projectSlug": "river-basin-mapping-atlas",
+      "published": true
+    },
+    {
+      "id": "exp-fao-2019",
+      "start": "2019-03",
+      "end": "2019-08",
+      "organization": {
+        "en": "FAO",
+        "ru": "ФАО",
+        "ky": "ФАО"
+      },
+      "position": {
+        "en": "National Inventory Expert",
+        "ru": "Национальный эксперт по инвентаризации",
+        "ky": "Инвентаризация боюнча улуттук эксперт"
+      },
+      "location": {
+        "en": "Kyrgyz Republic",
+        "ru": "Кыргызская Республика",
+        "ky": "Кыргыз Республикасы"
+      },
+      "details": {
+        "en": [
+          "Land-use inventory under the 2006 IPCC Guidelines (AFOLU), Collect Earth, digital land-use map of Kyrgyzstan (LULUCF)"
+        ],
+        "ru": [
+          "Инвентаризация землепользования по Руководящим принципам МГЭИК 2006 г. (СХЛХДВЗ), Collect Earth, цифровая карта землепользования Кыргызстана (ЗИЗЛХ)"
+        ],
+        "ky": [
+          "2006-жылдагы МГЭИК жетекчилигине ылайык жерди пайдаланууну инвентаризациялоо, Collect Earth, Кыргызстандын жерди пайдалануу санариптик картасы (LULUCF)"
+        ]
+      },
+      "projectSlug": "fao-mountain-forest-land-inventory",
+      "published": true
+    },
+    {
+      "id": "exp-dwrlr-2018",
+      "start": "2018-09",
+      "end": "2019-08",
+      "organization": {
+        "en": "Department of Water Resources and Land Reclamation of the Kyrgyz Republic",
+        "ru": "Департамент водного хозяйства и мелиорации Кыргызской Республики",
+        "ky": "Кыргыз Республикасынын Суу чарба жана мелиорация департаменти"
+      },
+      "position": {
+        "en": "National GIS Specialist for Basin Planning",
+        "ru": "Национальный ГИС-специалист по бассейновому планированию",
+        "ky": "Бассейндик пландоо боюнча улуттук ГМС адиси"
+      },
+      "location": {
+        "en": "Kyrgyz Republic",
+        "ru": "Кыргызская Республика",
+        "ky": "Кыргыз Республикасы"
+      },
+      "details": {
+        "en": [
+          "National Water Resources Management Project – Phase 1"
+        ],
+        "ru": [
+          "Национальный проект по управлению водными ресурсами – Фаза 1"
+        ],
+        "ky": [
+          "Суу ресурстарын башкаруу боюнча улуттук долбоор – 1-фаза"
+        ]
+      },
+      "projectSlug": "nwrmp-phase-1",
+      "published": true
+    },
+    {
+      "id": "exp-knau-2016",
+      "start": "2016",
+      "end": "2018",
+      "organization": {
+        "en": "Kyrgyz National Agrarian University named after K.I. Skryabin, Agricultural College",
+        "ru": "Аграрный колледж Кыргызского национального аграрного университета имени К.И. Скрябина",
+        "ky": "К.И. Скрябин атындагы Кыргыз улуттук агрардык университетинин Агрардык колледжи"
+      },
+      "position": {
+        "en": "Part-time Teacher",
+        "ru": "Преподаватель (по совместительству)",
+        "ky": "Окутуучу (айкалыштыруу боюнча)"
+      },
+      "location": {
+        "en": "Bishkek, Kyrgyz Republic",
+        "ru": "Бишкек, Кыргызская Республика",
+        "ky": "Бишкек, Кыргыз Республикасы"
+      },
+      "details": {
+        "en": [],
+        "ru": [],
+        "ky": []
+      },
+      "projectSlug": "",
+      "published": true
+    },
+    {
+      "id": "exp-kgpz-2012",
+      "start": "2012-08",
+      "end": "2018-03",
+      "organization": {
+        "en": "Kyrgyzgiprozem",
+        "ru": "Кыргызгипрозем",
+        "ky": "Кыргызгипрозем"
+      },
+      "position": {
+        "en": "Chief Specialist of the GIS and Project Production Department",
+        "ru": "Главный специалист отдела ГИС и производства проектов",
+        "ky": "ГМС жана долбоорлорду өндүрүү бөлүмүнүн башкы адиси"
+      },
+      "location": {
+        "en": "Kyrgyz Republic",
+        "ru": "Кыргызская Республика",
+        "ky": "Кыргыз Республикасы"
+      },
+      "details": {
+        "en": [
+          "Inventory and accounting of the land fund of the Kyrgyz Republic",
+          "UAV aerial photography, orthophoto digitising, digital cartography in ArcGIS and QGIS"
+        ],
+        "ru": [
+          "Инвентаризация и учёт земельного фонда Кыргызской Республики",
+          "Аэрофотосъёмка с БПЛА, оцифровка ортофотоматериалов, цифровая картография в ArcGIS и QGIS"
+        ],
+        "ky": [
+          "Кыргыз Республикасынын жер фондун инвентаризациялоо жана эсепке алуу",
+          "Учкучсуз аппараттар менен аэросүрөткө тартуу, ортофотоматериалдарды санариптештирүү, ArcGIS жана QGIS менен санариптик картография"
+        ]
+      },
+      "projectSlug": "kyrgyzgiprozem-land-inventory",
+      "published": true
+    }
+  ],
+  "projects": [
+    {
+      "id": "prj-undp-border-map",
+      "slug": "undp-digital-border-map",
+      "title": {
+        "en": "Digital Map of the State Border Service of the Kyrgyz Republic",
+        "ru": "Цифровая карта Государственной пограничной службы Кыргызской Республики",
+        "ky": "Кыргыз Республикасынын Мамлекеттик чек ара кызматынын санариптик картасы"
+      },
+      "organization": {
+        "en": "UNDP — Aid for Trade in Central Asia project (phase V)",
+        "ru": "ПРООН — проект «Содействие торговле в Центральной Азии» (фаза V)",
+        "ky": "БУУӨП — «Борбордук Азияда соодага көмөк көрсөтүү» долбоору (V фаза)"
+      },
+      "client": {
+        "en": "UNDP; beneficiary — State Border Service of the Kyrgyz Republic",
+        "ru": "ПРООН; бенефициар — Государственная пограничная служба КР",
+        "ky": "БУУӨП; бенефициар — КР Мамлекеттик чек ара кызматы"
+      },
+      "period": "2025",
+      "startYear": 2025,
+      "endYear": 2025,
+      "role": {
+        "en": "National Consultant on the development of a digital map for the State Border Service",
+        "ru": "Национальный консультант по разработке цифровой карты Государственной пограничной службы",
+        "ky": "Мамлекеттик чек ара кызматынын санариптик картасын иштеп чыгуу боюнча улуттук консультант"
+      },
+      "location": {
+        "en": "Bishkek, Kyrgyz Republic",
+        "ru": "Бишкек, Кыргызская Республика",
+        "ky": "Бишкек, Кыргыз Республикасы"
+      },
+      "summary": {
+        "en": "A trilingual digital map that aggregates and visualizes information on the border regime and border zone of the Kyrgyz Republic for citizens, government agencies, tourism businesses and tourists — supporting Task 11 of the Programme on Sustainable Tourism Development (2025–2030).",
+        "ru": "Трёхъязычная цифровая карта, агрегирующая и визуализирующая сведения о пограничном режиме и режиме пограничной полосы КР для граждан, госорганов, ММСП в сфере туризма и туристов — в поддержку задачи 11 Программы устойчивого развития туризма (2025–2030).",
+        "ky": "Кыргыз Республикасынын чек ара режими жана чек ара тилкеси жөнүндө маалыматты жарандар, мамлекеттик органдар, туризм ишканалары жана туристтер үчүн чогулткан жана көрсөткөн үч тилдүү санариптик карта — Туризмди туруктуу өнүктүрүү программасынын (2025–2030) 11-милдетин колдоо үчүн."
+      },
+      "activities": {
+        "en": [
+          "Individual work plan, desk analysis and consultations with stakeholders, including the State Border Service",
+          "Study of the client's requirements and relevant legislation (incl. Cabinet of Ministers resolution No. 172-r of 4 April 2016)",
+          "List of functional and visual requirements and of data in Kyrgyz, Russian and English for display on the map",
+          "Prototype / design of the digital map: page structure, navigation and functionality, approved by the SBS and UNDP",
+          "Development of the trilingual (KG / RU / EN) digital map adapted for mobile devices and its integration into the official SBS website",
+          "Training sessions for SBS staff, video instructions and written user guides for administrators, government users and external users",
+          "One month of technical support and refinements after commissioning",
+          "Version of the digital map for the Department of Tourism website discoverkyrgyzstan.org"
+        ],
+        "ru": [
+          "Индивидуальный план работ, кабинетный анализ и консультации с заинтересованными сторонами, включая ГПС КР",
+          "Изучение требований заказчика и законодательства (в т.ч. распоряжения Кабинета Министров КР от 4 апреля 2016 г. № 172-р)",
+          "Перечень функциональных и визуальных требований и данных на кыргызском, русском и английском языках для отображения на карте",
+          "Прототип / дизайн цифровой карты: структура страниц, навигация и функционал, согласование с ГПС КР и ПРООН",
+          "Разработка трёхъязычной (KG / RU / EN) цифровой карты с мобильной версией и её интеграция на официальный сайт ГПС КР",
+          "Обучающие сессии для сотрудников ГПС, видеоинструкции и письменные руководства для администраторов, госпользователей и внешних пользователей",
+          "Месяц технической поддержки и доработок после ввода в эксплуатацию",
+          "Версия цифровой карты для сайта Департамента туризма discoverkyrgyzstan.org"
+        ],
+        "ky": [
+          "Жеке иш планы, кабинеттик талдоо жана кызыкдар тараптар, анын ичинде КР МЧК менен консультациялар",
+          "Буйрутмачынын талаптарын жана мыйзамдарды изилдөө (анын ичинде КР Министрлер Кабинетинин 2016-жылдын 4-апрелиндеги № 172-б буйругу)",
+          "Картада көрсөтүү үчүн функционалдык жана визуалдык талаптардын, кыргыз, орус жана англис тилдериндеги маалыматтардын тизмеси",
+          "Санариптик картанын прототиби / дизайны: барактардын түзүмү, навигация жана функционал, МЧК жана БУУӨП менен макулдашуу",
+          "Мобилдик версиясы бар үч тилдүү (KG / RU / EN) санариптик картаны иштеп чыгуу жана аны МЧКнын расмий сайтына интеграциялоо",
+          "МЧК кызматкерлери үчүн окуу сессиялары, видеонускамалар жана администраторлор, мамлекеттик жана тышкы колдонуучулар үчүн жазуу жүзүндөгү колдонмолор",
+          "Пайдаланууга бергенден кийин бир айлык техникалык колдоо жана өркүндөтүү",
+          "Туризм департаментинин discoverkyrgyzstan.org сайты үчүн санариптик картанын версиясы"
+        ]
+      },
+      "technologies": [
+        "Web GIS",
+        "Trilingual KG / RU / EN",
+        "Mobile-friendly"
+      ],
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "prj-nwrmp-af",
+      "slug": "nwrmp-additional-financing",
+      "title": {
+        "en": "Additional Financing for the National Water Resources Management Project",
+        "ru": "Дополнительное финансирование Национального проекта по управлению водными ресурсами",
+        "ky": "Суу ресурстарын башкаруу боюнча улуттук долбоорду кошумча каржылоо"
+      },
+      "organization": {
+        "en": "State Water Resources Agency under the Ministry of Agriculture of the Kyrgyz Republic",
+        "ru": "Государственное агентство водных ресурсов при Министерстве сельского хозяйства КР",
+        "ky": "КР Айыл чарба министрлигине караштуу Мамлекеттик суу ресурстары агенттиги"
+      },
+      "client": {
+        "en": "World Bank",
+        "ru": "Всемирный банк",
+        "ky": "Дүйнөлүк банк"
+      },
+      "period": "2020–2023",
+      "startYear": 2020,
+      "endYear": 2023,
+      "role": {
+        "en": "GIS Specialist",
+        "ru": "ГИС-специалист",
+        "ky": "ГМС адиси"
+      },
+      "location": {
+        "en": "Kyrgyz Republic",
+        "ru": "Кыргызская Республика",
+        "ky": "Кыргыз Республикасы"
+      },
+      "summary": {
+        "en": "GIS support for basin planning: detailed maps and schemes for River Basin Plans, thematic mapping, data management and quality control of GIS software.",
+        "ru": "ГИС-сопровождение бассейнового планирования: детальные карты и схемы для бассейновых планов, тематическое картографирование, управление данными и контроль качества ГИС-продуктов.",
+        "ky": "Бассейндик пландоону ГМС менен коштоо: бассейндик пландар үчүн деталдуу карталар жана схемалар, тематикалык картографиялоо, маалыматтарды башкаруу жана ГМС продуктуларынын сапатын көзөмөлдөө."
+      },
+      "activities": {
+        "en": [
+          "Supported the Project Implementation Department and the State Water Resources Agency in developing detailed maps and schemes for inclusion in Basin Plans",
+          "Developed thematic maps",
+          "Maintained all data, ensuring its regular updating and quality control",
+          "Worked with modelling specialists and provided the GIS information required for modelling",
+          "Edited and modelled vector data",
+          "Participated in the development of an interactive platform for the project “Improving Agricultural Productivity and Nutrition”",
+          "Performed quality control of software products, including websites, GIS applications and mobile applications",
+          "Developed custom scripts for devices operating on various operating systems",
+          "Used automated testing and recorded identified errors"
+        ],
+        "ru": [
+          "Поддержка Отдела реализации проекта и Госагентства водных ресурсов в разработке детальных карт и схем для бассейновых планов",
+          "Разработка тематических карт",
+          "Ведение всех данных с регулярным обновлением и контролем качества",
+          "Работа со специалистами по моделированию и предоставление необходимой ГИС-информации",
+          "Редактирование и моделирование векторных данных",
+          "Участие в разработке интерактивной платформы проекта «Повышение продуктивности сельского хозяйства и питания»",
+          "Контроль качества программных продуктов: веб-сайтов, ГИС-приложений и мобильных приложений",
+          "Разработка пользовательских скриптов для устройств на различных операционных системах",
+          "Автоматизированное тестирование и фиксация выявленных ошибок"
+        ],
+        "ky": [
+          "Долбоорду ишке ашыруу бөлүмүнө жана Мамлекеттик суу ресурстары агенттигине бассейндик пландар үчүн деталдуу карталарды жана схемаларды иштеп чыгууда колдоо көрсөтүү",
+          "Тематикалык карталарды иштеп чыгуу",
+          "Бардык маалыматтарды жүргүзүү, аларды үзгүлтүксүз жаңылоо жана сапатын көзөмөлдөө",
+          "Моделдөө адистери менен иштөө жана керектүү ГМС маалыматын берүү",
+          "Вектордук маалыматтарды оңдоо жана моделдөө",
+          "«Айыл чарба өндүрүмдүүлүгүн жана тамактанууну жакшыртуу» долбоорунун интерактивдүү платформасын иштеп чыгууга катышуу",
+          "Программалык продуктулардын сапатын көзөмөлдөө: веб-сайттар, ГМС жана мобилдик тиркемелер",
+          "Ар кандай операциялык системалардагы түзмөктөр үчүн атайын скрипттерди иштеп чыгуу",
+          "Автоматташтырылган тестирлөө жана табылган каталарды каттоо"
+        ]
+      },
+      "technologies": [],
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "prj-fao-inrm",
+      "slug": "fao-integrated-natural-resource-management",
+      "title": {
+        "en": "Integrated Natural Resource Management in Drought-Prone and Saline Agricultural Production Landscapes in Central Asia and Turkey",
+        "ru": "Комплексное управление природными ресурсами в засушливых и засоленных агроландшафтах Центральной Азии и Турции",
+        "ky": "Борбордук Азия менен Түркиянын кургакчыл жана туздуу айыл чарба ландшафттарында жаратылыш ресурстарын комплекстүү башкаруу"
+      },
+      "organization": {
+        "en": "FAO / Kyrgyzgiprozem SPI",
+        "ru": "ФАО / ГПИ «Кыргызгипрозем»",
+        "ky": "ФАО / «Кыргызгипрозем» МДИ"
+      },
+      "client": {
+        "en": "FAO",
+        "ru": "ФАО",
+        "ky": "ФАО"
+      },
+      "period": "2020",
+      "startYear": 2020,
+      "endYear": 2020,
+      "role": {
+        "en": "GIS Expert",
+        "ru": "ГИС-эксперт",
+        "ky": "ГМС эксперти"
+      },
+      "location": {
+        "en": "Kyrgyz Republic",
+        "ru": "Кыргызская Республика",
+        "ky": "Кыргыз Республикасы"
+      },
+      "summary": {
+        "en": "Technical GIS assistance: geodatabase creation and management, digitising of land-use maps and capacity building for GIS specialists.",
+        "ru": "Техническая ГИС-поддержка: создание и ведение геобазы данных, оцифровка карт землепользования и обучение ГИС-специалистов.",
+        "ky": "ГМС боюнча техникалык жардам: геомаалымат базасын түзүү жана жүргүзүү, жерди пайдалануу карталарын санариптештирүү жана ГМС адистерин окутуу."
+      },
+      "activities": {
+        "en": [
+          "Provided technical assistance in the creation and management of a geodatabase",
+          "Installed and operated software for digitising land-use maps",
+          "Trained and supported other GIS specialists"
+        ],
+        "ru": [
+          "Техническая помощь в создании и ведении геобазы данных",
+          "Установка и эксплуатация программного обеспечения для оцифровки карт землепользования",
+          "Обучение и поддержка других ГИС-специалистов"
+        ],
+        "ky": [
+          "Геомаалымат базасын түзүүдө жана жүргүзүүдө техникалык жардам көрсөтүү",
+          "Жерди пайдалануу карталарын санариптештирүү үчүн программаларды орнотуу жана колдонуу",
+          "Башка ГМС адистерин окутуу жана колдоо"
+        ]
+      },
+      "technologies": [
+        "Geodatabase"
+      ],
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "prj-rec-atlas",
+      "slug": "river-basin-mapping-atlas",
+      "title": {
+        "en": "Map Creation and Atlas Production for Pilot River Basins",
+        "ru": "Создание карт и атласов пилотных речных бассейнов",
+        "ky": "Пилоттук дарыя бассейндеринин карталарын жана атластарын түзүү"
+      },
+      "organization": {
+        "en": "Kyrgyz Branch of the Regional Environmental Centre for Central Asia",
+        "ru": "Кыргызский филиал Регионального экологического центра Центральной Азии",
+        "ky": "Борбордук Азиянын Аймактык экологиялык борборунун Кыргыз филиалы"
+      },
+      "client": {
+        "en": "Kyrgyz Branch of the Regional Environmental Centre for Central Asia",
+        "ru": "Кыргызский филиал Регионального экологического центра Центральной Азии",
+        "ky": "Борбордук Азиянын Аймактык экологиялык борборунун Кыргыз филиалы"
+      },
+      "period": "2020",
+      "startYear": 2020,
+      "endYear": 2020,
+      "role": {
+        "en": "GIS Specialist",
+        "ru": "ГИС-специалист",
+        "ky": "ГМС адиси"
+      },
+      "location": {
+        "en": "Kyrgyz Republic",
+        "ru": "Кыргызская Республика",
+        "ky": "Кыргыз Республикасы"
+      },
+      "summary": {
+        "en": "Thematic mapping and spatial analysis for river basin atlases.",
+        "ru": "Тематическое картографирование и пространственный анализ для атласов речных бассейнов.",
+        "ky": "Дарыя бассейндеринин атластары үчүн тематикалык картографиялоо жана мейкиндик талдоо."
+      },
+      "activities": {
+        "en": [
+          "Created maps for the pilot river basins of Aspara and Isfara",
+          "Prepared atlases for the pilot river basins of Kurkuroo, Aspara, Padysha-Ata, Isfara and Isfana-Aksuu"
+        ],
+        "ru": [
+          "Создание карт пилотных речных бассейнов Аспара и Исфара",
+          "Подготовка атласов пилотных речных бассейнов Куркуроо, Аспара, Падыша-Ата, Исфара и Исфана-Аксуу"
+        ],
+        "ky": [
+          "Аспара жана Исфара пилоттук дарыя бассейндеринин карталарын түзүү",
+          "Күркүрөө, Аспара, Падыша-Ата, Исфара жана Исфана-Аксуу пилоттук дарыя бассейндеринин атластарын даярдоо"
+        ]
+      },
+      "technologies": [],
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "prj-fao-lulucf",
+      "slug": "fao-mountain-forest-land-inventory",
+      "title": {
+        "en": "Sustainable Management of Mountain Forest and Land Resources in the Face of Climate Change",
+        "ru": "Устойчивое управление горными лесными и земельными ресурсами в условиях изменения климата",
+        "ky": "Климаттын өзгөрүүсү шартында тоо токой жана жер ресурстарын туруктуу башкаруу"
+      },
+      "organization": {
+        "en": "FAO",
+        "ru": "ФАО",
+        "ky": "ФАО"
+      },
+      "client": {
+        "en": "FAO",
+        "ru": "ФАО",
+        "ky": "ФАО"
+      },
+      "period": "2019",
+      "startYear": 2019,
+      "endYear": 2019,
+      "role": {
+        "en": "National Inventory Expert",
+        "ru": "Национальный эксперт по инвентаризации",
+        "ky": "Инвентаризация боюнча улуттук эксперт"
+      },
+      "location": {
+        "en": "Kyrgyz Republic",
+        "ru": "Кыргызская Республика",
+        "ky": "Кыргыз Республикасы"
+      },
+      "summary": {
+        "en": "Field inventory of arable land and land-use types under the 2006 IPCC Guidelines and a digital land-use map of Kyrgyzstan (LULUCF).",
+        "ru": "Полевая инвентаризация пахотных земель и типов землепользования по Руководящим принципам МГЭИК 2006 г. и цифровая карта землепользования Кыргызстана (ЗИЗЛХ).",
+        "ky": "2006-жылдагы МГЭИК жетекчилигине ылайык айдоо жерлерин жана жерди пайдалануу түрлөрүн талаада инвентаризациялоо жана Кыргызстандын жерди пайдалануу санариптик картасы (LULUCF)."
+      },
+      "activities": {
+        "en": [
+          "Prepared a work plan, including preliminary schedules for field missions",
+          "Conducted 10 field missions, each lasting 7 days, to different regions to inventory arable land and determine land-use types",
+          "Conducted the inventory in accordance with the 2006 IPCC Guidelines for National Greenhouse Gas Inventories, Volume 4 “Agriculture, Forestry and Other Land Use”",
+          "Prepared an inventory report",
+          "Participated in a 10-day remote sensing training on land use and land-use change by the six IPCC land-use categories using Collect Earth",
+          "Participated in identifying land-use types and developing a land-use and land-use change matrix",
+          "Developed a digital land-use map of Kyrgyzstan (LULUCF)"
+        ],
+        "ru": [
+          "Подготовка плана работ, включая предварительный график полевых выездов",
+          "Проведение 10 полевых выездов (по 7 дней) в разные регионы для инвентаризации пахотных земель и определения типов землепользования",
+          "Инвентаризация в соответствии с Руководящими принципами МГЭИК 2006 г. для национальных кадастров парниковых газов, том 4 «Сельское хозяйство, лесное хозяйство и другие виды землепользования»",
+          "Подготовка отчёта по инвентаризации",
+          "Участие в 10-дневном обучении по дистанционному зондированию для анализа землепользования и его изменений по шести категориям МГЭИК с использованием Collect Earth",
+          "Участие в определении типов землепользования и разработке матрицы землепользования и его изменений",
+          "Разработка цифровой карты землепользования Кыргызстана (ЗИЗЛХ)"
+        ],
+        "ky": [
+          "Талаа сапарларынын алдын ала графигин камтыган иш планын даярдоо",
+          "Айдоо жерлерин инвентаризациялоо жана жерди пайдалануу түрлөрүн аныктоо үчүн ар кайсы аймактарга 10 талаа сапарын (ар бири 7 күн) өткөрүү",
+          "Инвентаризацияны 2006-жылдагы МГЭИК жетекчилигинин 4-томуна («Айыл чарба, токой чарбасы жана жерди пайдалануунун башка түрлөрү») ылайык жүргүзүү",
+          "Инвентаризация боюнча отчет даярдоо",
+          "Collect Earth аркылуу МГЭИКтин алты категориясы боюнча жерди пайдаланууну талдоо үчүн 10 күндүк Жерди алыстан зонддоо окуусуна катышуу",
+          "Жерди пайдалануу түрлөрүн аныктоого жана жерди пайдалануу жана анын өзгөрүү матрицасын иштеп чыгууга катышуу",
+          "Кыргызстандын жерди пайдалануу санариптик картасын (LULUCF) иштеп чыгуу"
+        ]
+      },
+      "technologies": [
+        "Collect Earth",
+        "IPCC 2006 Guidelines (AFOLU)"
+      ],
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "prj-nwrmp-1",
+      "slug": "nwrmp-phase-1",
+      "title": {
+        "en": "National Water Resources Management Project – Phase 1",
+        "ru": "Национальный проект по управлению водными ресурсами – Фаза 1",
+        "ky": "Суу ресурстарын башкаруу боюнча улуттук долбоор – 1-фаза"
+      },
+      "organization": {
+        "en": "Department of Water Resources and Land Reclamation of the Kyrgyz Republic",
+        "ru": "Департамент водного хозяйства и мелиорации Кыргызской Республики",
+        "ky": "Кыргыз Республикасынын Суу чарба жана мелиорация департаменти"
+      },
+      "client": {
+        "en": "Department of Water Resources and Land Reclamation of the Kyrgyz Republic",
+        "ru": "Департамент водного хозяйства и мелиорации Кыргызской Республики",
+        "ky": "Кыргыз Республикасынын Суу чарба жана мелиорация департаменти"
+      },
+      "period": "2018–2019",
+      "startYear": 2018,
+      "endYear": 2019,
+      "role": {
+        "en": "National GIS Specialist for Basin Planning",
+        "ru": "Национальный ГИС-специалист по бассейновому планированию",
+        "ky": "Бассейндик пландоо боюнча улуттук ГМС адиси"
+      },
+      "location": {
+        "en": "Kyrgyz Republic",
+        "ru": "Кыргызская Республика",
+        "ky": "Кыргыз Республикасы"
+      },
+      "summary": {
+        "en": "Basin maps and schemes, thematic mapping, spatial data processing and checking, and support of GIS applications.",
+        "ru": "Бассейновые карты и схемы, тематическое картографирование, обработка и проверка пространственных данных, поддержка ГИС-приложений.",
+        "ky": "Бассейндик карталар жана схемалар, тематикалык картографиялоо, мейкиндик маалыматтарды иштетүү жана текшерүү, ГМС тиркемелерин колдоо."
+      },
+      "activities": {
+        "en": [
+          "Developed detailed maps and schemes for inclusion in Basin Plans",
+          "Developed thematic maps",
+          "Maintained, regularly updated and quality-checked data",
+          "Provided GIS information to modelling specialists",
+          "Performed quality control of websites, GIS applications and mobile applications",
+          "Developed custom scripts",
+          "Conducted automated testing and recorded identified errors"
+        ],
+        "ru": [
+          "Разработка детальных карт и схем для бассейновых планов",
+          "Разработка тематических карт",
+          "Ведение, регулярное обновление и проверка качества данных",
+          "Предоставление ГИС-информации специалистам по моделированию",
+          "Контроль качества веб-сайтов, ГИС-приложений и мобильных приложений",
+          "Разработка пользовательских скриптов",
+          "Автоматизированное тестирование и фиксация выявленных ошибок"
+        ],
+        "ky": [
+          "Бассейндик пландар үчүн деталдуу карталарды жана схемаларды иштеп чыгуу",
+          "Тематикалык карталарды иштеп чыгуу",
+          "Маалыматтарды жүргүзүү, үзгүлтүксүз жаңылоо жана сапатын текшерүү",
+          "Моделдөө адистерине ГМС маалыматын берүү",
+          "Веб-сайттардын, ГМС жана мобилдик тиркемелердин сапатын көзөмөлдөө",
+          "Атайын скрипттерди иштеп чыгуу",
+          "Автоматташтырылган тестирлөө жана табылган каталарды каттоо"
+        ]
+      },
+      "technologies": [],
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "prj-kgpz",
+      "slug": "kyrgyzgiprozem-land-inventory",
+      "title": {
+        "en": "Land Inventory and Digital Cartography",
+        "ru": "Инвентаризация земель и цифровая картография",
+        "ky": "Жерлерди инвентаризациялоо жана санариптик картография"
+      },
+      "organization": {
+        "en": "Kyrgyzgiprozem",
+        "ru": "Кыргызгипрозем",
+        "ky": "Кыргызгипрозем"
+      },
+      "client": {
+        "en": "Kyrgyzgiprozem (ongoing projects)",
+        "ru": "Кыргызгипрозем (текущие проекты)",
+        "ky": "Кыргызгипрозем (учурдагы долбоорлор)"
+      },
+      "period": "2012–2018",
+      "startYear": 2012,
+      "endYear": 2018,
+      "role": {
+        "en": "Chief Specialist of the GIS and Project Production Department",
+        "ru": "Главный специалист отдела ГИС и производства проектов",
+        "ky": "ГМС жана долбоорлорду өндүрүү бөлүмүнүн башкы адиси"
+      },
+      "location": {
+        "en": "Kyrgyz Republic",
+        "ru": "Кыргызская Республика",
+        "ky": "Кыргыз Республикасы"
+      },
+      "summary": {
+        "en": "Inventory and accounting of the land fund of the Kyrgyz Republic: UAV aerial photography, orthophoto digitising, vectorisation, georeferencing and thematic cartography.",
+        "ru": "Инвентаризация и учёт земельного фонда Кыргызской Республики: аэрофотосъёмка с БПЛА, оцифровка ортофотоматериалов, векторизация, геопривязка и тематическая картография.",
+        "ky": "Кыргыз Республикасынын жер фондун инвентаризациялоо жана эсепке алуу: учкучсуз аппараттар менен аэросүрөткө тартуу, ортофотоматериалдарды санариптештирүү, векторлоо, геобайланыштыруу жана тематикалык картография."
+      },
+      "activities": {
+        "en": [
+          "Prepared unmanned aerial vehicles for flights",
+          "Operated equipment for aerial photography and video recording",
+          "Analysed and processed the obtained photographic and video materials",
+          "Digitised orthophoto materials",
+          "Studied the capabilities of ArcGIS, Quantum GIS and laser scanning",
+          "Performed vectorisation, georeferencing and analysis of spatial data",
+          "Analysed and processed digital cartographic data",
+          "Developed a unified standard for digital maps and a conventional symbols classifier",
+          "Created styles for working with spatial vector terrain models",
+          "Converted various formats into Shape format",
+          "Created various types of maps using ArcGIS tools",
+          "Georeferenced raster and vector data to a specified coordinate system",
+          "Developed thematic cartographic materials and printed cartographic materials"
+        ],
+        "ru": [
+          "Подготовка беспилотных летательных аппаратов к полётам",
+          "Работа с оборудованием для аэрофото- и видеосъёмки",
+          "Анализ и обработка полученных фото- и видеоматериалов",
+          "Оцифровка ортофотоматериалов",
+          "Изучение возможностей ArcGIS, Quantum GIS и лазерного сканирования",
+          "Векторизация, геопривязка и анализ пространственных данных",
+          "Анализ и обработка цифровых картографических данных",
+          "Разработка единого стандарта цифровых карт и классификатора условных знаков",
+          "Создание стилей для работы с пространственными векторными моделями местности",
+          "Конвертация различных форматов в формат Shape",
+          "Создание различных видов карт инструментами ArcGIS",
+          "Привязка растровых и векторных данных к заданной системе координат",
+          "Разработка тематических картографических материалов и печать картографической продукции"
+        ],
+        "ky": [
+          "Учкучсуз учуучу аппараттарды учууга даярдоо",
+          "Аэросүрөткө жана видеого тартуучу жабдуулар менен иштөө",
+          "Алынган сүрөт жана видео материалдарды талдоо жана иштетүү",
+          "Ортофотоматериалдарды санариптештирүү",
+          "ArcGIS, Quantum GIS жана лазердик сканерлөөнүн мүмкүнчүлүктөрүн изилдөө",
+          "Мейкиндик маалыматтарды векторлоо, геобайланыштыруу жана талдоо",
+          "Санариптик картографиялык маалыматтарды талдоо жана иштетүү",
+          "Санариптик карталардын бирдиктүү стандартын жана шарттуу белгилер классификаторун иштеп чыгуу",
+          "Жердин мейкиндик вектордук моделдери менен иштөө үчүн стилдерди түзүү",
+          "Ар кандай форматтарды Shape форматына айландыруу",
+          "ArcGIS куралдары менен ар кандай карталарды түзүү",
+          "Растрдык жана вектордук маалыматтарды берилген координаттар системасына байланыштыруу",
+          "Тематикалык картографиялык материалдарды иштеп чыгуу жана басып чыгаруу"
+        ]
+      },
+      "technologies": [
+        "ArcGIS",
+        "QGIS",
+        "UAV",
+        "Shapefile",
+        "Georeferencing",
+        "Orthophoto"
+      ],
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-knau",
+      "institution": {
+        "en": "Kyrgyz National Agrarian University named after K.I. Skryabin",
+        "ru": "Кыргызский национальный аграрный университет имени К.И. Скрябина",
+        "ky": "К.И. Скрябин атындагы Кыргыз улуттук агрардык университети"
+      },
+      "period": "2007–2012",
+      "qualification": {
+        "en": "Engineer (higher education diploma)",
+        "ru": "Инженер (диплом о высшем образовании)",
+        "ky": "Инженер (жогорку билим жөнүндө диплом)"
+      },
+      "specialty": {
+        "en": "Land Management",
+        "ru": "Землеустройство",
+        "ky": "Жерге жайгаштыруу"
+      },
+      "faculty": {
+        "en": "Faculty of Natural Resource Management",
+        "ru": "Факультет управления природными ресурсами",
+        "ky": "Жаратылыш ресурстарын башкаруу факультети"
+      },
+      "thesis": {
+        "en": "Application of GIS Technologies in Land Registration in Ton District",
+        "ru": "Применение ГИС-технологий при учёте земель в Тонском районе",
+        "ky": "Тоң районунун жерлерин эсепке алууда ГИС технологияларын колдонуу"
+      },
+      "image": "/api/media/documents/diploma-redacted.jpg",
+      "imageApproved": false,
+      "published": true
+    }
+  ],
+  "certificates": [
+    {
+      "id": "cert-2013-intro-gis",
+      "title": {
+        "en": "Introduction to Geographic Information Systems",
+        "ru": "Введение в геоинформационные системы",
+        "ky": "Геомаалыматтык системаларга киришүү"
+      },
+      "issuer": {
+        "en": "Kyrgyz State University of Construction, Transport and Architecture named after N. Isanov — STC “Technopark”",
+        "ru": "Кыргызский государственный университет строительства, транспорта и архитектуры им. Н. Исанова — НТЦ «Технопарк»",
+        "ky": "Н. Исанов атындагы Кыргыз мамлекеттик курулуш, транспорт жана архитектура университети — «Технопарк» ИТБ"
+      },
+      "date": {
+        "en": "24–28 June 2013",
+        "ru": "24–28 июня 2013 г.",
+        "ky": "2013-жылдын 24–28-июну"
+      },
+      "year": 2013,
+      "location": {
+        "en": "Bishkek",
+        "ru": "Бишкек",
+        "ky": "Бишкек"
+      },
+      "topics": [
+        "gis"
+      ],
+      "description": {
+        "en": "Full training course in GIS fundamentals.",
+        "ru": "Полный курс обучения основам ГИС.",
+        "ky": "ГМС негиздери боюнча толук окуу курсу."
+      },
+      "image": "/api/media/documents/cert-2013-intro-gis.jpg",
+      "imageApproved": false,
+      "published": true
+    },
+    {
+      "id": "cert-2016-geoscan",
+      "title": {
+        "en": "Theoretical and Practical Training of an Operator of GEOSCAN 101 and GEOSCAN 201 Unmanned Systems",
+        "ru": "Теоретическая и практическая подготовка оператора по управлению беспилотными комплексами GEOSCAN 101 и GEOSCAN 201",
+        "ky": "GEOSCAN 101 жана GEOSCAN 201 учкучсуз комплекстерин башкаруу боюнча операторду теориялык жана практикалык даярдоо"
+      },
+      "issuer": {
+        "en": "Geoscan LLC",
+        "ru": "ООО «Геоскан»",
+        "ky": "«Геоскан» ЖЧК"
+      },
+      "date": {
+        "en": "10 March 2016",
+        "ru": "10 марта 2016 г.",
+        "ky": "2016-жылдын 10-марты"
+      },
+      "year": 2016,
+      "location": {
+        "en": "Saint Petersburg",
+        "ru": "Санкт-Петербург",
+        "ky": "Санкт-Петербург"
+      },
+      "topics": [
+        "uav"
+      ],
+      "description": {
+        "en": "UAV operator course completed while at Kyrgyzgiprozem.",
+        "ru": "Курс оператора БПЛА, пройден во время работы в ГПИ «Кыргызгипрозем».",
+        "ky": "«Кыргызгипрозем» МДИде иштеп жүргөндө өтүлгөн учкучсуз аппараттардын оператору курсу."
+      },
+      "image": "/api/media/documents/cert-2016-geoscan.jpg",
+      "imageApproved": false,
+      "published": true
+    },
+    {
+      "id": "cert-2019-fao-collect-earth",
+      "title": {
+        "en": "Land Use, Land Use Change and Remote Sensing Inventory Training through Collect Earth",
+        "ru": "Обучение инвентаризации землепользования, его изменений и дистанционному зондированию с помощью Collect Earth",
+        "ky": "Collect Earth аркылуу жерди пайдаланууну, анын өзгөрүүсүн инвентаризациялоо жана Жерди алыстан зонддоо боюнча окуу"
+      },
+      "issuer": {
+        "en": "Food and Agriculture Organization of the United Nations (FAO), with support of the Global Environment Facility",
+        "ru": "Продовольственная и сельскохозяйственная организация ООН (ФАО) при поддержке Глобального экологического фонда",
+        "ky": "БУУнун Азык-түлүк жана айыл чарба уюму (ФАО), Глобалдык экологиялык фонддун колдоосу менен"
+      },
+      "date": {
+        "en": "15–26 April 2019",
+        "ru": "15–26 апреля 2019 г.",
+        "ky": "2019-жылдын 15–26-апрели"
+      },
+      "year": 2019,
+      "location": {
+        "en": "Bishkek",
+        "ru": "Бишкек",
+        "ky": "Бишкек"
+      },
+      "topics": [
+        "remote-sensing",
+        "gis"
+      ],
+      "description": {
+        "en": "Organized under the project “Sustainable Management of Mountainous Forest and Land Resources under Climate Change Conditions”.",
+        "ru": "Проведено в рамках проекта «Устойчивое управление горными лесными и земельными ресурсами в условиях изменения климата».",
+        "ky": "«Климаттын өзгөрүүсү шартында тоо токой жана жер ресурстарын туруктуу башкаруу» долбоорунун алкагында өткөрүлгөн."
+      },
+      "image": "/api/media/documents/cert-2019-fao-collect-earth.jpg",
+      "imageApproved": false,
+      "published": true
+    },
+    {
+      "id": "cert-2023-gee-pyqgis",
+      "title": {
+        "en": "Google Earth Engine and PyQGIS",
+        "ru": "Google Earth Engine и PyQGIS",
+        "ky": "Google Earth Engine жана PyQGIS"
+      },
+      "issuer": {
+        "en": "GIZ programme (German Cooperation) with Giprozem; delivered by gis-trainer.com / geoSYS",
+        "ru": "Программа GIZ (Германское сотрудничество) совместно с Гипрозем; проведено gis-trainer.com / geoSYS",
+        "ky": "GIZ программасы (Германиянын кызматташтыгы) Гипрозем менен бирге; gis-trainer.com / geoSYS өткөргөн"
+      },
+      "date": {
+        "en": "27 Feb – 3 Mar and 13–15 Mar 2023",
+        "ru": "27 февраля – 3 марта и 13–15 марта 2023 г.",
+        "ky": "2023-жылдын 27-февраль – 3-марты жана 13–15-марты"
+      },
+      "year": 2023,
+      "location": {
+        "en": "Kyrgyz Republic",
+        "ru": "Кыргызская Республика",
+        "ky": "Кыргыз Республикасы"
+      },
+      "topics": [
+        "remote-sensing",
+        "programming"
+      ],
+      "description": {
+        "en": "GEE: JavaScript, Landsat and Sentinel imagery, cloud filtering, NDVI, supervised and unsupervised classification, pasture degradation analysis. PyQGIS: Python field calculations, QGIS Python console, geoprocessing with Python.",
+        "ru": "GEE: JavaScript, снимки Landsat и Sentinel, фильтрация по облачности, NDVI, классификация с обучением и без, анализ деградации пастбищ. PyQGIS: полевые вычисления на Python, консоль Python в QGIS, геообработка на Python.",
+        "ky": "GEE: JavaScript, Landsat жана Sentinel сүрөттөрү, булуттуулук боюнча чыпкалоо, NDVI, окутуу менен жана окутуусуз классификация, жайыттардын деградациясын талдоо. PyQGIS: Python менен талаа эсептөөлөрү, QGIS Python консолу, Python менен геоиштетүү."
+      },
+      "image": "/api/media/documents/cert-2023-gee-pyqgis.jpg",
+      "imageApproved": false,
+      "published": true
+    },
+    {
+      "id": "cert-2023-almaty-remote-sensing",
+      "title": {
+        "en": "Methods and Tools for Mapping and Remote Sensing Data Interpretation",
+        "ru": "Методы и инструменты картографирования и дешифрирования данных дистанционного зондирования",
+        "ky": "Картага түшүрүү жана Жерди алыстан зонддоо маалыматтарын чечмелөө ыкмалары жана куралдары"
+      },
+      "issuer": {
+        "en": "5-day seminar and field workshops — Institute of Geography RAS and Moscow State University",
+        "ru": "5-дневный семинар и полевые практикумы — Институт географии РАН и МГУ",
+        "ky": "5 күндүк семинар жана талаа практикумдары — РИАнын География институту жана ММУ"
+      },
+      "date": {
+        "en": "17–21 April 2023",
+        "ru": "17–21 апреля 2023 г.",
+        "ky": "2023-жылдын 17–21-апрели"
+      },
+      "year": 2023,
+      "location": {
+        "en": "Almaty, Kazakhstan",
+        "ru": "Алматы, Казахстан",
+        "ky": "Алматы, Казакстан"
+      },
+      "topics": [
+        "remote-sensing",
+        "uav"
+      ],
+      "description": {
+        "en": "Topics: unmanned aerial photography of agricultural objects and natural hazards, photogrammetric survey, time-series image analysis, photogrammetric processing, reanalysis for avalanche and mudflow conditions.",
+        "ru": "Темы: аэрофотосъёмка с БПЛА сельхозобъектов и опасных природных явлений, фотограмметрическая съёмка, анализ временных рядов снимков, фотограмметрическая обработка, реанализ условий схода лавин и селей.",
+        "ky": "Темалар: айыл чарба объекттерин жана табигый кырсыктарды учкучсуз аппараттар менен тартуу, фотограмметриялык тартуу, сүрөттөрдүн убакыт катарларын талдоо, фотограмметриялык иштетүү, көчкү жана сел шарттарын реанализ."
+      },
+      "image": "/api/media/documents/cert-2023-almaty-remote-sensing.jpg",
+      "imageApproved": false,
+      "published": true
+    },
+    {
+      "id": "cert-2023-escap-cloud",
+      "title": {
+        "en": "Capacity-Building Training on the Use of Cloud-Based Platforms to Support the Adoption of the Pilot Central Asia Drought Information System",
+        "ru": "Образовательное мероприятие «Использование облачных решений для поддержки внедрения Системы информации о засухе для Центральной Азии»",
+        "ky": "«Борбордук Азия үчүн кургакчылык жөнүндө маалымат системасын киргизүүнү колдоо үчүн булут платформаларын колдонуу» окуусу"
+      },
+      "issuer": {
+        "en": "United Nations Economic and Social Commission for Asia and the Pacific (ESCAP)",
+        "ru": "Экономическая и социальная комиссия ООН для Азии и Тихого океана (ЭСКАТО)",
+        "ky": "БУУнун Азия жана Тынч океан үчүн экономикалык жана социалдык комиссиясы (ЭСКАТО)"
+      },
+      "date": {
+        "en": "24–28 April 2023",
+        "ru": "24–28 апреля 2023 г.",
+        "ky": "2023-жылдын 24–28-апрели"
+      },
+      "year": 2023,
+      "location": {
+        "en": "Bishkek",
+        "ru": "Бишкек",
+        "ky": "Бишкек"
+      },
+      "topics": [
+        "remote-sensing",
+        "gis"
+      ],
+      "description": {
+        "en": "Cloud-based geospatial platforms for drought information.",
+        "ru": "Облачные геопространственные платформы для информации о засухе.",
+        "ky": "Кургакчылык жөнүндө маалымат үчүн булуттагы геомейкиндик платформалар."
+      },
+      "image": "/api/media/documents/cert-2023-escap-cloud.jpg",
+      "imageApproved": false,
+      "published": true
+    },
+    {
+      "id": "cert-2023-wb-consultants",
+      "title": {
+        "en": "Capacity Building Seminar: Selection and Evaluation of Consultants under World Bank-funded Operations",
+        "ru": "Семинар по наращиванию потенциала: отбор и оценка консультантов в операциях, финансируемых Всемирным банком",
+        "ky": "Потенциалды жогорулатуу семинары: Дүйнөлүк банк каржылаган операцияларда консультанттарды тандоо жана баалоо"
+      },
+      "issuer": {
+        "en": "Water Resources Service under the Ministry of Agriculture of the Kyrgyz Republic (World Bank-funded operation)",
+        "ru": "Служба водных ресурсов при Министерстве сельского хозяйства КР (операция, финансируемая Всемирным банком)",
+        "ky": "КР Айыл чарба министрлигине караштуу Суу ресурстары кызматы (Дүйнөлүк банк каржылаган операция)"
+      },
+      "date": {
+        "en": "1–2 August 2023",
+        "ru": "1–2 августа 2023 г.",
+        "ky": "2023-жылдын 1–2-августу"
+      },
+      "year": 2023,
+      "location": {
+        "en": "Bishkek",
+        "ru": "Бишкек",
+        "ky": "Бишкек"
+      },
+      "topics": [
+        "project-management"
+      ],
+      "description": {
+        "en": "Procurement of consulting services in World Bank-funded projects.",
+        "ru": "Закупка консультационных услуг в проектах, финансируемых Всемирным банком.",
+        "ky": "Дүйнөлүк банк каржылаган долбоорлордо консультациялык кызматтарды сатып алуу."
+      },
+      "image": "/api/media/documents/cert-2023-wb-consultants.jpg",
+      "imageApproved": false,
+      "published": true
+    }
+  ],
+  "skills": [
+    {
+      "id": "sk-gis",
+      "icon": "layers",
+      "title": {
+        "en": "GIS & Cartography",
+        "ru": "ГИС и картография",
+        "ky": "ГМС жана картография"
+      },
+      "items": {
+        "en": [
+          "QGIS",
+          "ArcGIS",
+          "Digital cartography",
+          "Thematic maps",
+          "Georeferencing",
+          "Vectorisation",
+          "Map standards & symbol classifiers"
+        ],
+        "ru": [
+          "QGIS",
+          "ArcGIS",
+          "Цифровая картография",
+          "Тематические карты",
+          "Геопривязка",
+          "Векторизация",
+          "Стандарты карт и классификаторы условных знаков"
+        ],
+        "ky": [
+          "QGIS",
+          "ArcGIS",
+          "Санариптик картография",
+          "Тематикалык карталар",
+          "Геобайланыштыруу",
+          "Векторлоо",
+          "Карта стандарттары жана шарттуу белгилердин классификаторлору"
+        ]
+      },
+      "published": true
+    },
+    {
+      "id": "sk-rs",
+      "icon": "satellite",
+      "title": {
+        "en": "Remote Sensing",
+        "ru": "Дистанционное зондирование",
+        "ky": "Жерди алыстан зонддоо"
+      },
+      "items": {
+        "en": [
+          "Google Earth Engine",
+          "Landsat",
+          "Sentinel",
+          "NDVI",
+          "Satellite image classification",
+          "Collect Earth"
+        ],
+        "ru": [
+          "Google Earth Engine",
+          "Landsat",
+          "Sentinel",
+          "NDVI",
+          "Классификация спутниковых снимков",
+          "Collect Earth"
+        ],
+        "ky": [
+          "Google Earth Engine",
+          "Landsat",
+          "Sentinel",
+          "NDVI",
+          "Спутник сүрөттөрүн классификациялоо",
+          "Collect Earth"
+        ]
+      },
+      "published": true
+    },
+    {
+      "id": "sk-uav",
+      "icon": "drone",
+      "title": {
+        "en": "UAV & Photogrammetry",
+        "ru": "БПЛА и фотограмметрия",
+        "ky": "Учкучсуз аппараттар жана фотограмметрия"
+      },
+      "items": {
+        "en": [
+          "GEOSCAN 101 / 201",
+          "UAV flight preparation",
+          "Aerial photo processing",
+          "Orthophoto interpretation"
+        ],
+        "ru": [
+          "GEOSCAN 101 / 201",
+          "Подготовка БПЛА к полётам",
+          "Обработка аэрофотоснимков",
+          "Дешифровка ортофотопланов"
+        ],
+        "ky": [
+          "GEOSCAN 101 / 201",
+          "Учкучсуз аппараттарды учууга даярдоо",
+          "Аэросүрөттөрдү иштетүү",
+          "Ортофотопландарды дешифрлөө"
+        ]
+      },
+      "published": true
+    },
+    {
+      "id": "sk-code",
+      "icon": "code",
+      "title": {
+        "en": "Programming & GIS Automation",
+        "ru": "Программирование и автоматизация ГИС",
+        "ky": "Программалоо жана ГМС автоматташтыруу"
+      },
+      "items": {
+        "en": [
+          "PyQGIS",
+          "Python",
+          "JavaScript for Google Earth Engine",
+          "Custom scripts",
+          "Automated testing"
+        ],
+        "ru": [
+          "PyQGIS",
+          "Python",
+          "JavaScript для Google Earth Engine",
+          "Пользовательские скрипты",
+          "Автоматизированное тестирование"
+        ],
+        "ky": [
+          "PyQGIS",
+          "Python",
+          "Google Earth Engine үчүн JavaScript",
+          "Атайын скрипттер",
+          "Автоматташтырылган тестирлөө"
+        ]
+      },
+      "published": true
+    },
+    {
+      "id": "sk-land",
+      "icon": "land",
+      "title": {
+        "en": "Land Management",
+        "ru": "Землеустройство",
+        "ky": "Жерге жайгаштыруу"
+      },
+      "items": {
+        "en": [
+          "Land management",
+          "Cadastral analysis",
+          "Land inventory",
+          "Land-use mapping (IPCC categories)",
+          "Spatial data management"
+        ],
+        "ru": [
+          "Землеустройство",
+          "Кадастровый анализ",
+          "Инвентаризация земель",
+          "Картографирование землепользования (категории МГЭИК)",
+          "Управление пространственными данными"
+        ],
+        "ky": [
+          "Жерге жайгаштыруу",
+          "Кадастрдык талдоо",
+          "Жерлерди инвентаризациялоо",
+          "Жерди пайдаланууну картага түшүрүү (МГЭИК категориялары)",
+          "Мейкиндик маалыматтарды башкаруу"
+        ]
+      },
+      "published": true
+    },
+    {
+      "id": "sk-web",
+      "icon": "globe",
+      "title": {
+        "en": "Web GIS",
+        "ru": "Web GIS",
+        "ky": "Web GIS"
+      },
+      "items": {
+        "en": [
+          "Interactive maps",
+          "Spatial web applications",
+          "Geodata processing",
+          "QA of websites, GIS and mobile apps"
+        ],
+        "ru": [
+          "Интерактивные карты",
+          "Пространственные веб-приложения",
+          "Обработка геоданных",
+          "Контроль качества сайтов, ГИС- и мобильных приложений"
+        ],
+        "ky": [
+          "Интерактивдүү карталар",
+          "Мейкиндик веб-тиркемелер",
+          "Геомаалыматтарды иштетүү",
+          "Сайттардын, ГМС жана мобилдик тиркемелердин сапатын көзөмөлдөө"
+        ]
+      },
+      "published": true
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "pf-digital-border-map",
+      "slug": "digital-border-map",
+      "category": "web-gis",
+      "title": {
+        "en": "Digital Map of the State Border Service of the Kyrgyz Republic",
+        "ru": "Цифровая карта Государственной пограничной службы Кыргызской Республики",
+        "ky": "Кыргыз Республикасынын Мамлекеттик чек ара кызматынын санариптик картасы"
+      },
+      "summary": {
+        "en": "Trilingual web map of border-regime rules for the State Border Service website and discoverkyrgyzstan.org.",
+        "ru": "Трёхъязычная веб-карта правил пограничного режима для сайта ГПС КР и discoverkyrgyzstan.org.",
+        "ky": "МЧКнын сайты жана discoverkyrgyzstan.org үчүн чек ара режиминин эрежелеринин үч тилдүү веб-картасы."
+      },
+      "body": {
+        "en": "As National Consultant under the UNDP Aid for Trade project (phase V) I was engaged to develop a digital map for the State Border Service of the Kyrgyz Republic. The map brings together open information on the rules of the border regime and the border zone in Kyrgyz, Russian and English and is designed for citizens, government agencies, tourism businesses and tourists.\n\nThe assignment covered requirements and data collection with the State Border Service, a prototype of the page structure and navigation, development of the map with a mobile version, integration into the official SBS website, training and user guides for staff, a month of technical support, and a version for the Department of Tourism website discoverkyrgyzstan.org.",
+        "ru": "В качестве национального консультанта проекта ПРООН «Содействие торговле» (фаза V) я привлекался к разработке цифровой карты Государственной пограничной службы Кыргызской Республики. Карта объединяет открытые сведения о правилах пограничного режима и режима пограничной полосы на кыргызском, русском и английском языках и предназначена для граждан, госорганов, бизнеса в сфере туризма и туристов.\n\nЗадание включало сбор требований и данных совместно с ГПС КР, прототип структуры страниц и навигации, разработку карты с мобильной версией, интеграцию на официальный сайт ГПС, обучение и руководства для сотрудников, месяц технической поддержки и версию для сайта Департамента туризма discoverkyrgyzstan.org.",
+        "ky": "БУУӨПтүн «Соодага көмөк көрсөтүү» долбоорунун (V фаза) улуттук консультанты катары Кыргыз Республикасынын Мамлекеттик чек ара кызматынын санариптик картасын иштеп чыгууга тартылгам. Карта чек ара режими жана чек ара тилкесинин эрежелери жөнүндө ачык маалыматты кыргыз, орус жана англис тилдеринде бириктирет жана жарандар, мамлекеттик органдар, туризм бизнеси жана туристтер үчүн арналган.\n\nТапшырма МЧК менен бирге талаптарды жана маалыматтарды чогултууну, барактардын түзүмүнүн жана навигациянын прототибин, мобилдик версиясы бар картаны иштеп чыгууну, МЧКнын расмий сайтына интеграциялоону, кызматкерлерди окутууну жана колдонмолорду, бир айлык техникалык колдоону жана Туризм департаментинин discoverkyrgyzstan.org сайты үчүн версияны камтыган."
+      },
+      "year": "2025",
+      "projectSlug": "undp-digital-border-map",
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "pf-basin-plan-maps",
+      "slug": "basin-plan-maps",
+      "category": "water",
+      "title": {
+        "en": "Maps and schemes for River Basin Plans",
+        "ru": "Карты и схемы для бассейновых планов",
+        "ky": "Бассейндик пландар үчүн карталар жана схемалар"
+      },
+      "summary": {
+        "en": "Detailed maps, schemes and thematic maps prepared for inclusion in river basin plans.",
+        "ru": "Детальные карты, схемы и тематические карты для включения в бассейновые планы.",
+        "ky": "Бассейндик пландарга киргизүү үчүн даярдалган деталдуу карталар, схемалар жана тематикалык карталар."
+      },
+      "body": {
+        "en": "Within the National Water Resources Management Project (Phase 1, 2018–2019) and its Additional Financing (2020–2023), I developed detailed maps and schemes for Basin Plans, thematic maps, and maintained and quality-checked the project's spatial data. GIS information was also prepared for hydrological modelling specialists.",
+        "ru": "В рамках Национального проекта по управлению водными ресурсами (Фаза 1, 2018–2019) и его дополнительного финансирования (2020–2023) разрабатывал детальные карты и схемы для бассейновых планов, тематические карты, вёл и проверял качество пространственных данных проекта. Также готовил ГИС-информацию для специалистов по моделированию.",
+        "ky": "Суу ресурстарын башкаруу боюнча улуттук долбоордун (1-фаза, 2018–2019) жана аны кошумча каржылоонун (2020–2023) алкагында бассейндик пландар үчүн деталдуу карталарды жана схемаларды, тематикалык карталарды иштеп чыгып, долбоордун мейкиндик маалыматтарын жүргүзүп, сапатын текшердим. Ошондой эле моделдөө адистери үчүн ГМС маалыматын даярдадым."
+      },
+      "year": "2018–2023",
+      "projectSlug": "nwrmp-additional-financing",
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "pf-pilot-basin-atlases",
+      "slug": "pilot-basin-atlases",
+      "category": "gis-mapping",
+      "title": {
+        "en": "Atlases of pilot river basins",
+        "ru": "Атласы пилотных речных бассейнов",
+        "ky": "Пилоттук дарыя бассейндеринин атластары"
+      },
+      "summary": {
+        "en": "Maps for the Aspara and Isfara basins; atlases for Kurkuroo, Aspara, Padysha-Ata, Isfara and Isfana-Aksuu.",
+        "ru": "Карты бассейнов Аспара и Исфара; атласы бассейнов Куркуроо, Аспара, Падыша-Ата, Исфара и Исфана-Аксуу.",
+        "ky": "Аспара жана Исфара бассейндеринин карталары; Күркүрөө, Аспара, Падыша-Ата, Исфара жана Исфана-Аксуу бассейндеринин атластары."
+      },
+      "body": {
+        "en": "For the Kyrgyz Branch of the Regional Environmental Centre for Central Asia (2020) I created maps for the pilot river basins of Aspara and Isfara and prepared atlases for five pilot basins.",
+        "ru": "Для Кыргызского филиала Регионального экологического центра Центральной Азии (2020) создал карты пилотных бассейнов рек Аспара и Исфара и подготовил атласы пяти пилотных бассейнов.",
+        "ky": "Борбордук Азиянын Аймактык экологиялык борборунун Кыргыз филиалы үчүн (2020) Аспара жана Исфара пилоттук бассейндеринин карталарын түзүп, беш пилоттук бассейндин атластарын даярдадым."
+      },
+      "year": "2020",
+      "projectSlug": "river-basin-mapping-atlas",
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "pf-lulucf-map",
+      "slug": "lulucf-land-use-map",
+      "category": "remote-sensing",
+      "title": {
+        "en": "Digital land-use map of Kyrgyzstan (LULUCF)",
+        "ru": "Цифровая карта землепользования Кыргызстана (ЗИЗЛХ)",
+        "ky": "Кыргызстандын жерди пайдалануу санариптик картасы (LULUCF)"
+      },
+      "summary": {
+        "en": "Land-use inventory with Collect Earth by the six IPCC land-use categories and a national digital land-use map.",
+        "ru": "Инвентаризация землепользования в Collect Earth по шести категориям МГЭИК и национальная цифровая карта землепользования.",
+        "ky": "Collect Earth аркылуу МГЭИКтин алты категориясы боюнча жерди пайдаланууну инвентаризациялоо жана улуттук санариптик карта."
+      },
+      "body": {
+        "en": "As FAO National Inventory Expert (2019) I conducted ten 7-day field missions, took part in identifying land-use types and building the land-use change matrix, and developed a digital land-use map of Kyrgyzstan for LULUCF reporting.",
+        "ru": "Как национальный эксперт ФАО по инвентаризации (2019) провёл десять 7-дневных полевых выездов, участвовал в определении типов землепользования и построении матрицы изменений и разработал цифровую карту землепользования Кыргызстана для отчётности ЗИЗЛХ.",
+        "ky": "ФАОнун инвентаризация боюнча улуттук эксперти катары (2019) он жолу 7 күндүк талаа сапарларын өткөрүп, жерди пайдалануу түрлөрүн аныктоого жана өзгөрүү матрицасын түзүүгө катышып, LULUCF отчеттуулугу үчүн Кыргызстандын жерди пайдалануу санариптик картасын иштеп чыктым."
+      },
+      "year": "2019",
+      "projectSlug": "fao-mountain-forest-land-inventory",
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "pf-uav-aerial",
+      "slug": "uav-aerial-survey",
+      "category": "uav",
+      "title": {
+        "en": "UAV aerial photography and orthophoto digitising",
+        "ru": "Аэрофотосъёмка с БПЛА и оцифровка ортофотопланов",
+        "ky": "Учкучсуз аппараттар менен аэросүрөткө тартуу жана ортофотопландарды санариптештирүү"
+      },
+      "summary": {
+        "en": "Flight preparation, aerial photo and video capture, processing and digitising of orthophoto materials.",
+        "ru": "Подготовка к полётам, аэрофото- и видеосъёмка, обработка и оцифровка ортофотоматериалов.",
+        "ky": "Учууга даярдоо, аэросүрөт жана видео тартуу, ортофотоматериалдарды иштетүү жана санариптештирүү."
+      },
+      "body": {
+        "en": "At Kyrgyzgiprozem (2012–2018) I prepared UAVs for flights, operated aerial photography and video equipment, analysed and processed the materials and digitised orthophotos. In 2016 I completed operator training for GEOSCAN 101 and GEOSCAN 201 unmanned systems.",
+        "ru": "В «Кыргызгипроземе» (2012–2018) готовил БПЛА к полётам, работал с оборудованием аэрофото- и видеосъёмки, анализировал и обрабатывал материалы и оцифровывал ортофотопланы. В 2016 году прошёл подготовку оператора беспилотных комплексов GEOSCAN 101 и GEOSCAN 201.",
+        "ky": "«Кыргызгипроземде» (2012–2018) учкучсуз аппараттарды учууга даярдап, аэросүрөт жана видео тартуучу жабдуулар менен иштеп, материалдарды талдап, иштетип, ортофотопландарды санариптештирдим. 2016-жылы GEOSCAN 101 жана GEOSCAN 201 учкучсуз комплекстеринин операторлук даярдыгынан өттүм."
+      },
+      "year": "2012–2018",
+      "projectSlug": "kyrgyzgiprozem-land-inventory",
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "pf-land-fund",
+      "slug": "land-fund-inventory",
+      "category": "land-surveying",
+      "title": {
+        "en": "Inventory and accounting of the land fund",
+        "ru": "Инвентаризация и учёт земельного фонда",
+        "ky": "Жер фондун инвентаризациялоо жана эсепке алуу"
+      },
+      "summary": {
+        "en": "Digital cartographic data for the national land fund inventory of the Kyrgyz Republic.",
+        "ru": "Цифровые картографические данные для инвентаризации земельного фонда Кыргызской Республики.",
+        "ky": "Кыргыз Республикасынын жер фондун инвентаризациялоо үчүн санариптик картографиялык маалыматтар."
+      },
+      "body": {
+        "en": "Main area of work at Kyrgyzgiprozem: vectorisation, georeferencing and analysis of spatial data, conversion to Shape format, georeferencing raster and vector data to a specified coordinate system, and preparation of thematic and printed cartographic materials.",
+        "ru": "Основное направление работы в «Кыргызгипроземе»: векторизация, геопривязка и анализ пространственных данных, конвертация в формат Shape, привязка растровых и векторных данных к заданной системе координат, подготовка тематических и печатных картографических материалов.",
+        "ky": "«Кыргызгипроземдеги» негизги иш багыты: мейкиндик маалыматтарды векторлоо, геобайланыштыруу жана талдоо, Shape форматына айландыруу, растрдык жана вектордук маалыматтарды берилген координаттар системасына байланыштыруу, тематикалык жана басма картографиялык материалдарды даярдоо."
+      },
+      "year": "2012–2018",
+      "projectSlug": "kyrgyzgiprozem-land-inventory",
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "pf-map-standard",
+      "slug": "digital-map-standard",
+      "category": "gis-mapping",
+      "title": {
+        "en": "Unified digital map standard and symbol classifier",
+        "ru": "Единый стандарт цифровых карт и классификатор условных знаков",
+        "ky": "Санариптик карталардын бирдиктүү стандарты жана шарттуу белгилер классификатору"
+      },
+      "summary": {
+        "en": "A unified standard for digital maps, a conventional symbols classifier and styles for vector terrain models.",
+        "ru": "Единый стандарт цифровых карт, классификатор условных знаков и стили для векторных моделей местности.",
+        "ky": "Санариптик карталардын бирдиктүү стандарты, шарттуу белгилердин классификатору жана вектордук моделдер үчүн стилдер."
+      },
+      "body": {
+        "en": "At Kyrgyzgiprozem I developed a unified standard for digital maps and a conventional symbols classifier, and created styles for working with spatial vector terrain models in ArcGIS.",
+        "ru": "В «Кыргызгипроземе» разработал единый стандарт цифровых карт и классификатор условных знаков, создал стили для работы с пространственными векторными моделями местности в ArcGIS.",
+        "ky": "«Кыргызгипроземде» санариптик карталардын бирдиктүү стандартын жана шарттуу белгилердин классификаторун иштеп чыгып, ArcGISте жердин мейкиндик вектордук моделдери менен иштөө үчүн стилдерди түздүм."
+      },
+      "year": "2012–2018",
+      "projectSlug": "kyrgyzgiprozem-land-inventory",
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "pf-ton-diploma",
+      "slug": "gis-land-registration-ton-district",
+      "category": "cadastral",
+      "title": {
+        "en": "GIS technologies in land registration — Ton District",
+        "ru": "ГИС-технологии при учёте земель — Тонский район",
+        "ky": "Жерлерди эсепке алууда ГИС технологиялары — Тоң району"
+      },
+      "summary": {
+        "en": "Diploma project on applying GIS to land registration in Ton District, Issyk-Kul Region.",
+        "ru": "Дипломный проект о применении ГИС при учёте земель в Тонском районе Иссык-Кульской области.",
+        "ky": "Ысык-Көл облусунун Тоң районунда жерлерди эсепке алууда ГМС колдонуу боюнча диплом долбоору."
+      },
+      "body": {
+        "en": "Diploma project “Application of GIS Technologies in Land Registration in Ton District”, defended in 2012 at the Kyrgyz National Agrarian University named after K.I. Skryabin.",
+        "ru": "Дипломный проект «Применение ГИС-технологий при учёте земель в Тонском районе», защищён в 2012 году в Кыргызском национальном аграрном университете имени К.И. Скрябина.",
+        "ky": "«Тоң районунун жерлерин эсепке алууда ГИС технологияларын колдонуу» диплом долбоору 2012-жылы К.И. Скрябин атындагы Кыргыз улуттук агрардык университетинде корголгон."
+      },
+      "year": "2012",
+      "projectSlug": "",
+      "images": [],
+      "map": {
+        "center": [
+          42.12,
+          76.99
+        ],
+        "zoom": 9,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "pf-interactive-platform",
+      "slug": "interactive-platform-qa",
+      "category": "web-gis",
+      "title": {
+        "en": "Interactive platform and GIS application QA",
+        "ru": "Интерактивная платформа и контроль качества ГИС-приложений",
+        "ky": "Интерактивдүү платформа жана ГМС тиркемелеринин сапатын көзөмөлдөө"
+      },
+      "summary": {
+        "en": "Participation in an interactive platform and quality control of websites, GIS and mobile applications.",
+        "ru": "Участие в разработке интерактивной платформы и контроль качества сайтов, ГИС- и мобильных приложений.",
+        "ky": "Интерактивдүү платформаны иштеп чыгууга катышуу жана сайттардын, ГМС жана мобилдик тиркемелердин сапатын көзөмөлдөө."
+      },
+      "body": {
+        "en": "I participated in the development of an interactive platform for the project “Improving Agricultural Productivity and Nutrition”, performed quality control of websites, GIS applications and mobile applications, developed custom scripts and used automated testing, recording identified errors.",
+        "ru": "Участвовал в разработке интерактивной платформы проекта «Повышение продуктивности сельского хозяйства и питания», выполнял контроль качества сайтов, ГИС- и мобильных приложений, разрабатывал пользовательские скрипты, применял автоматизированное тестирование и фиксировал ошибки.",
+        "ky": "«Айыл чарба өндүрүмдүүлүгүн жана тамактанууну жакшыртуу» долбоорунун интерактивдүү платформасын иштеп чыгууга катышып, сайттардын, ГМС жана мобилдик тиркемелердин сапатын көзөмөлдөп, атайын скрипттерди жазып, автоматташтырылган тестирлөөнү колдонуп, каталарды каттадым."
+      },
+      "year": "2020–2023",
+      "projectSlug": "nwrmp-additional-financing",
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    },
+    {
+      "id": "pf-landuse-geodatabase",
+      "slug": "land-use-geodatabase",
+      "category": "gis-mapping",
+      "title": {
+        "en": "Land-use map digitising and geodatabase",
+        "ru": "Оцифровка карт землепользования и геобаза данных",
+        "ky": "Жерди пайдалануу карталарын санариптештирүү жана геобаза"
+      },
+      "summary": {
+        "en": "Geodatabase creation and management and digitising of land-use maps for an FAO project.",
+        "ru": "Создание и ведение геобазы данных и оцифровка карт землепользования для проекта ФАО.",
+        "ky": "ФАО долбоору үчүн геобазаны түзүү жана жүргүзүү, жерди пайдалануу карталарын санариптештирүү."
+      },
+      "body": {
+        "en": "As GIS Expert for FAO / Kyrgyzgiprozem (2020) I provided technical assistance in creating and managing a geodatabase, installed and operated software for digitising land-use maps, and trained and supported other GIS specialists.",
+        "ru": "Как ГИС-эксперт ФАО / «Кыргызгипрозем» (2020) оказывал техническую помощь в создании и ведении геобазы данных, устанавливал и эксплуатировал ПО для оцифровки карт землепользования, обучал и поддерживал других ГИС-специалистов.",
+        "ky": "ФАО / «Кыргызгипрозем» ГМС эксперти катары (2020) геобазаны түзүүдө жана жүргүзүүдө техникалык жардам көрсөтүп, жерди пайдалануу карталарын санариптештирүү программаларын орнотуп, башка ГМС адистерин окуттум жана колдодум."
+      },
+      "year": "2020",
+      "projectSlug": "fao-integrated-natural-resource-management",
+      "images": [],
+      "map": {
+        "center": null,
+        "zoom": null,
+        "geojsonUrl": ""
+      },
+      "published": true
+    }
+  ],
+  "services": [
+    {
+      "id": "svc-consulting",
+      "icon": "compass",
+      "published": true,
+      "title": {
+        "en": "GIS Consulting",
+        "ru": "ГИС-консалтинг",
+        "ky": "ГМС консалтинги"
+      },
+      "description": {
+        "en": "GIS components of development projects: data needs, workflows, mapping for planning documents and quality control.",
+        "ru": "ГИС-компоненты проектов развития: потребности в данных, рабочие процессы, карты для плановых документов и контроль качества.",
+        "ky": "Өнүктүрүү долбоорлорунун ГМС компоненттери: маалыматка муктаждык, иш процесстери, пландоо документтери үчүн карталар жана сапатты көзөмөлдөө."
+      }
+    },
+    {
+      "id": "svc-webgis",
+      "icon": "globe",
+      "published": true,
+      "title": {
+        "en": "Web GIS Development",
+        "ru": "Разработка Web GIS",
+        "ky": "Web GIS иштеп чыгуу"
+      },
+      "description": {
+        "en": "Interactive web maps and spatial web applications, plus testing and quality control of GIS apps.",
+        "ru": "Интерактивные веб-карты и пространственные веб-приложения, тестирование и контроль качества ГИС-приложений.",
+        "ky": "Интерактивдүү веб-карталар жана мейкиндик веб-тиркемелер, ГМС тиркемелерин тестирлөө жана сапатын көзөмөлдөө."
+      }
+    },
+    {
+      "id": "svc-analysis",
+      "icon": "chart",
+      "published": true,
+      "title": {
+        "en": "Geospatial Data Analysis",
+        "ru": "Анализ геопространственных данных",
+        "ky": "Геомейкиндик маалыматтарды талдоо"
+      },
+      "description": {
+        "en": "Spatial analysis, data processing and preparation of GIS inputs for modelling specialists.",
+        "ru": "Пространственный анализ, обработка данных и подготовка ГИС-данных для специалистов по моделированию.",
+        "ky": "Мейкиндик талдоо, маалыматтарды иштетүү жана моделдөө адистери үчүн ГМС маалыматтарын даярдоо."
+      }
+    },
+    {
+      "id": "svc-topo",
+      "icon": "mountain",
+      "published": true,
+      "title": {
+        "en": "Topographic Surveying",
+        "ru": "Топографическая съёмка",
+        "ky": "Топографиялык тартуу"
+      },
+      "description": {
+        "en": "Topographic plans and terrain data prepared to project specifications.",
+        "ru": "Топографические планы и данные о рельефе по требованиям проекта.",
+        "ky": "Долбоордун талаптарына ылайык топографиялык пландар жана рельеф маалыматтары."
+      }
+    },
+    {
+      "id": "svc-gnss",
+      "icon": "target",
+      "published": true,
+      "title": {
+        "en": "GNSS Surveying",
+        "ru": "GNSS-съёмка",
+        "ky": "GNSS тартуу"
+      },
+      "description": {
+        "en": "Field positioning and control points tied to the required coordinate system.",
+        "ru": "Полевое позиционирование и опорные точки в требуемой системе координат.",
+        "ky": "Талаада жайгашкан жерди аныктоо жана талап кылынган координаттар системасындагы таяныч чекиттер."
+      }
+    },
+    {
+      "id": "svc-drone",
+      "icon": "drone",
+      "published": true,
+      "title": {
+        "en": "Drone Mapping",
+        "ru": "Картографирование с БПЛА",
+        "ky": "Учкучсуз аппараттар менен картага түшүрүү"
+      },
+      "description": {
+        "en": "UAV flight preparation, aerial photography, processing and orthophoto digitising.",
+        "ru": "Подготовка полётов БПЛА, аэрофотосъёмка, обработка и оцифровка ортофотопланов.",
+        "ky": "Учкучсуз аппараттардын учуусун даярдоо, аэросүрөткө тартуу, иштетүү жана ортофотопландарды санариптештирүү."
+      }
+    },
+    {
+      "id": "svc-rs",
+      "icon": "satellite",
+      "published": true,
+      "title": {
+        "en": "Remote Sensing",
+        "ru": "Дистанционное зондирование",
+        "ky": "Жерди алыстан зонддоо"
+      },
+      "description": {
+        "en": "Landsat / Sentinel analysis in Google Earth Engine, NDVI, image classification and land-use mapping.",
+        "ru": "Анализ Landsat / Sentinel в Google Earth Engine, NDVI, классификация снимков и картографирование землепользования.",
+        "ky": "Google Earth Engineде Landsat / Sentinel талдоо, NDVI, сүрөттөрдү классификациялоо жана жерди пайдаланууну картага түшүрүү."
+      }
+    },
+    {
+      "id": "svc-cadastre",
+      "icon": "land",
+      "published": true,
+      "title": {
+        "en": "Land Cadastre",
+        "ru": "Земельный кадастр",
+        "ky": "Жер кадастры"
+      },
+      "description": {
+        "en": "Land management, land inventory and cadastral analysis based on spatial data.",
+        "ru": "Землеустройство, инвентаризация земель и кадастровый анализ на основе пространственных данных.",
+        "ky": "Мейкиндик маалыматтардын негизинде жерге жайгаштыруу, жерлерди инвентаризациялоо жана кадастрдык талдоо."
+      }
+    },
+    {
+      "id": "svc-carto",
+      "icon": "map",
+      "published": true,
+      "title": {
+        "en": "Digital Cartography",
+        "ru": "Цифровая картография",
+        "ky": "Санариптик картография"
+      },
+      "description": {
+        "en": "Thematic maps, atlases, map standards and print-ready cartographic materials.",
+        "ru": "Тематические карты, атласы, стандарты карт и картографические материалы для печати.",
+        "ky": "Тематикалык карталар, атластар, карта стандарттары жана басууга даяр картографиялык материалдар."
+      }
+    },
+    {
+      "id": "svc-db",
+      "icon": "database",
+      "published": true,
+      "title": {
+        "en": "GIS Database Development",
+        "ru": "Разработка ГИС-баз данных",
+        "ky": "ГМС маалымат базаларын иштеп чыгуу"
+      },
+      "description": {
+        "en": "Geodatabase design, data conversion, regular updating and quality control.",
+        "ru": "Проектирование геобаз, конвертация данных, регулярное обновление и контроль качества.",
+        "ky": "Геобазаларды долбоорлоо, маалыматтарды айландыруу, үзгүлтүксүз жаңылоо жана сапатты көзөмөлдөө."
+      }
+    }
+  ],
+  "uiOverrides": {
+    "en": {},
+    "ru": {},
+    "ky": {}
+  }
+}

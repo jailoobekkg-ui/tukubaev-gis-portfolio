@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Colour tokens as "R G B" so Tailwind can apply opacity (bg-accent/20). */
+:root {
+  --bg: 244 247 251;
+  --bg2: 255 255 255;
+  --fg: 11 18 32;
+  --muted: 71 85 105;
+  --accent: 2 132 199;
+  --accent2: 22 163 74;
+  --line: 15 23 42;
+  --glass: 255 255 255;
+  color-scheme: light;
+}
+.dark {
+  --bg: 11 18 32;       /* #0B1220 */
+  --bg2: 17 28 48;      /* #111C30 */
+  --fg: 248 250 252;    /* #F8FAFC */
+  --muted: 148 163 184;
+  --accent: 0 212 255;  /* #00D4FF */
+  --accent2: 34 197 94; /* #22C55E */
+  --line: 148 163 184;
+  --glass: 17 28 48;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+body {
+  @apply bg-bg text-fg antialiased;
+  font-feature-settings: "cv11", "ss01";
+}
+
+@layer components {
+  .glass {
+    background: rgb(var(--glass) / 0.62);
+    border: 1px solid rgb(var(--line) / 0.14);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    backdrop-filter: blur(14px) saturate(140%);
+  }
+  .card {
+    @apply glass rounded-2xl transition duration-300;
+  }
+  .card-hover {
+    @apply hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-glow;
+  }
+  .kicker {
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-accent;
+  }
+  .h2 {
+    @apply font-display text-3xl font-bold tracking-tight md:text-4xl;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-accent text-[#0B1220] hover:brightness-110;
+  }
+  .btn-ghost {
+    @apply btn glass text-fg hover:border-accent/50 hover:text-accent;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-line/20 px-3 py-1 text-xs text-muted;
+  }
+  .chip-active {
+    @apply border-accent/60 bg-accent/10 text-accent;
+  }
+  .input {
+    @apply w-full rounded-xl border border-line/20 bg-bg2/70 px-3.5 py-2.5 text-sm text-fg placeholder:text-muted/70 focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/30;
+  }
+  .label {
+    @apply mb-1.5 block text-xs font-medium text-muted;
+  }
+  .grid-bg {
+    background-image: linear-gradient(rgb(var(--line) / 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(var(--line) / 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
+
+/* Leaflet theming */
+.leaflet-container {
+  font: inherit;
+  background: rgb(var(--bg2));
+}
+.leaflet-control-attribution {
+  font-size: 10px !important;
+}
+.dark .leaflet-control-attribution {
+  background: rgb(11 18 32 / 0.7) !important;
+  color: #94a3b8 !important;
+}
+.dark .leaflet-control-attribution a {
+  color: #67e8f9 !important;
+}
+.dark .leaflet-bar a {
+  background: #111c30;
+  color: #f8fafc;
+  border-color: #1e2b45;
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: rgb(var(--bg2));
+  color: rgb(var(--fg));
+}
+.measure-label {
+  background: rgb(var(--bg2) / 0.92);
+  border: 1px solid rgb(var(--accent) / 0.6);
+  color: rgb(var(--fg));
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+}

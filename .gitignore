@@ -1,0 +1,21 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+
+# runtime data written by the admin panel / contact form
+data/messages.json
+data/uploads/
+data/backups/
+.admin-test-password.txt
+
+# Scanned diploma and certificates: personal documents, kept out of the public repository.
+# Copy this folder to the server separately (see README).
+data/documents/
+
+# local tool settings
+.claude/
