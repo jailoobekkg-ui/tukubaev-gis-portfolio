@@ -19,3 +19,5 @@ data/documents/
 
 # local tool settings
 .claude/
+
+.vercel

@@ -1,0 +1,12 @@
+# Files that must never be uploaded to Vercel
+node_modules
+.next
+.env
+.env.local
+.env.*.local
+.admin-test-password.txt
+.claude
+data/documents
+data/uploads
+data/backups
+data/messages.json

@@ -45,7 +45,13 @@ export function slugify(input: string) {
 }
 
 export function siteUrl() {
-  return (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, "");
+  // Strip a BOM or stray whitespace that some shells add when the value is piped in.
+  const raw = (process.env.NEXT_PUBLIC_SITE_URL || "").replace(/^﻿/, "").trim().replace(/\/$/, "");
+  try {
+    return new URL(raw).origin;
+  } catch {
+    return "http://localhost:3000";
+  }
 }
 
 /** Bundled document scans ship with a "-thumb.jpg" preview; other images are used as-is. */
