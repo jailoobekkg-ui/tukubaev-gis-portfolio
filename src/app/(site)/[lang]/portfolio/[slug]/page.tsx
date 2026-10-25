@@ -6,6 +6,7 @@ import { DocumentsBlock, Gallery, MapBlock } from "@/components/site/MediaBlocks
 import { getPublicContent } from "@/lib/content";
 import { getDictionary, isLocale, tr, type DictKey } from "@/lib/i18n";
 import { LOCALES } from "@/lib/types";
+import { hasOwnMap } from "@/lib/utils";
 
 type Props = { params: Promise<{ lang: string; slug: string }> };
 
@@ -61,10 +62,8 @@ export default async function PortfolioItemPage({ params }: Props) {
             )}
           </section>
           {item.documents && item.documents.length > 0 && <DocumentsBlock documents={item.documents} title={t["portfolio.atlases"]} />}
-          {(item.images.length > 0 || !item.documents?.length) && (
-            <Gallery images={item.images} title={t["portfolio.materials"]} emptyText={t["portfolio.noMaterials"]} />
-          )}
-          <MapBlock settings={item.map} title={t["projects.map"]} />
+          {item.images.length > 0 && <Gallery images={item.images} title={t["portfolio.materials"]} emptyText={t["portfolio.noMaterials"]} />}
+          {hasOwnMap(item.map) && <MapBlock settings={item.map} title={t["projects.map"]} />}
         </div>
       </div>
     </article>

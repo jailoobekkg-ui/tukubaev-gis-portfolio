@@ -1,4 +1,4 @@
-import type { Locale } from "./types";
+import type { Locale, MapSettings } from "./types";
 
 export function cn(...parts: (string | false | null | undefined)[]) {
   return parts.filter(Boolean).join(" ");
@@ -52,6 +52,11 @@ export function siteUrl() {
   } catch {
     return "http://localhost:3000";
   }
+}
+
+/** True when a page has its own map content; an unset map would only show the generic Kyrgyzstan outline. */
+export function hasOwnMap(map: MapSettings | undefined) {
+  return Boolean(map && (map.embedUrl || map.geojsonUrl || (map.center && map.center.length === 2)));
 }
 
 /** Bundled document scans ship with a "-thumb.jpg" preview; other images are used as-is. */

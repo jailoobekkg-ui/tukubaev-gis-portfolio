@@ -6,6 +6,7 @@ import { Gallery, MapBlock } from "@/components/site/MediaBlocks";
 import { getPublicContent } from "@/lib/content";
 import { getDictionary, isLocale, tr, trList } from "@/lib/i18n";
 import { LOCALES } from "@/lib/types";
+import { hasOwnMap } from "@/lib/utils";
 
 type Props = { params: Promise<{ lang: string; slug: string }> };
 
@@ -67,8 +68,8 @@ export default async function ProjectPage({ params }: Props) {
                 ))}
               </ul>
             </section>
-            <Gallery images={p.images} title={t["projects.gallery"]} emptyText={t["projects.noImages"]} />
-            <MapBlock settings={p.map} title={t["projects.map"]} />
+            {p.images.length > 0 && <Gallery images={p.images} title={t["projects.gallery"]} emptyText={t["projects.noImages"]} />}
+            {hasOwnMap(p.map) && <MapBlock settings={p.map} title={t["projects.map"]} />}
           </div>
 
           <aside className="space-y-6">
