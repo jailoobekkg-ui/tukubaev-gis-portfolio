@@ -10,6 +10,10 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   eslint: { ignoreDuringBuilds: true },
+  // The media route reads approved scans and content.json at runtime; ship them with the function (needed on Vercel).
+  outputFileTracingIncludes: {
+    "/api/media/[...path]": ["./data/content.json", "./data/documents/**/*"],
+  },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

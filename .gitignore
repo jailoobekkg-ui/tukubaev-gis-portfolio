@@ -13,9 +13,10 @@ data/uploads/
 data/backups/
 .admin-test-password.txt
 
-# Scanned diploma and certificates: personal documents, kept out of the public repository.
-# Copy this folder to the server separately (see README).
-data/documents/
+# Scanned documents: only the certificates approved for the site are published.
+# The diploma copy stays out of the public repository (copy it to the server separately).
+data/documents/*
+!data/documents/cert-*.jpg
 
 # local tool settings
 .claude/

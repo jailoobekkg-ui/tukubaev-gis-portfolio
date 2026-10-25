@@ -1074,7 +1074,7 @@
         "ky": "ГМС негиздери боюнча толук окуу курсу."
       },
       "image": "/api/media/documents/cert-2013-intro-gis.jpg",
-      "imageApproved": false,
+      "imageApproved": true,
       "published": true
     },
     {
@@ -1109,7 +1109,7 @@
         "ky": "«Кыргызгипрозем» МДИде иштеп жүргөндө өтүлгөн учкучсуз аппараттардын оператору курсу."
       },
       "image": "/api/media/documents/cert-2016-geoscan.jpg",
-      "imageApproved": false,
+      "imageApproved": true,
       "published": true
     },
     {
@@ -1145,7 +1145,7 @@
         "ky": "«Климаттын өзгөрүүсү шартында тоо токой жана жер ресурстарын туруктуу башкаруу» долбоорунун алкагында өткөрүлгөн."
       },
       "image": "/api/media/documents/cert-2019-fao-collect-earth.jpg",
-      "imageApproved": false,
+      "imageApproved": true,
       "published": true
     },
     {
@@ -1181,7 +1181,7 @@
         "ky": "GEE: JavaScript, Landsat жана Sentinel сүрөттөрү, булуттуулук боюнча чыпкалоо, NDVI, окутуу менен жана окутуусуз классификация, жайыттардын деградациясын талдоо. PyQGIS: Python менен талаа эсептөөлөрү, QGIS Python консолу, Python менен геоиштетүү."
       },
       "image": "/api/media/documents/cert-2023-gee-pyqgis.jpg",
-      "imageApproved": false,
+      "imageApproved": true,
       "published": true
     },
     {
@@ -1217,7 +1217,7 @@
         "ky": "Темалар: айыл чарба объекттерин жана табигый кырсыктарды учкучсуз аппараттар менен тартуу, фотограмметриялык тартуу, сүрөттөрдүн убакыт катарларын талдоо, фотограмметриялык иштетүү, көчкү жана сел шарттарын реанализ."
       },
       "image": "/api/media/documents/cert-2023-almaty-remote-sensing.jpg",
-      "imageApproved": false,
+      "imageApproved": true,
       "published": true
     },
     {
@@ -1253,7 +1253,7 @@
         "ky": "Кургакчылык жөнүндө маалымат үчүн булуттагы геомейкиндик платформалар."
       },
       "image": "/api/media/documents/cert-2023-escap-cloud.jpg",
-      "imageApproved": false,
+      "imageApproved": true,
       "published": true
     },
     {
@@ -1288,7 +1288,7 @@
         "ky": "Дүйнөлүк банк каржылаган долбоорлордо консультациялык кызматтарды сатып алуу."
       },
       "image": "/api/media/documents/cert-2023-wb-consultants.jpg",
-      "imageApproved": false,
+      "imageApproved": true,
       "published": true
     }
   ],

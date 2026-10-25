@@ -6,7 +6,7 @@ node_modules
 .env.*.local
 .admin-test-password.txt
 .claude
-data/documents
+data/documents/diploma-*
 data/uploads
 data/backups
 data/messages.json
