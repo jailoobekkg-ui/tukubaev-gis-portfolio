@@ -20,6 +20,9 @@ const CAT_ICON: Record<string, string> = {
   water: "layers",
 };
 
+/** Card image: first uploaded image, otherwise the cover of the first attached publication. */
+const coverOf = (p: PortfolioItem) => p.images[0] || (p.documents?.[0] ? `${p.documents[0].base}/page-01-thumb.jpg` : "");
+
 export default function PortfolioGrid({ items, limit, initialCategory = "all" }: { items: PortfolioItem[]; limit?: number; initialCategory?: string }) {
   const { locale, t } = useI18n();
   const [cat, setCat] = useState(initialCategory);
@@ -43,9 +46,9 @@ export default function PortfolioGrid({ items, limit, initialCategory = "all" }:
             <motion.li key={p.id} layout initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, scale: 0.97 }}>
               <Link href={`/${locale}/portfolio/${p.slug}`} className="card card-hover group flex h-full flex-col overflow-hidden">
                 <div className="relative h-40 overflow-hidden">
-                  {p.images[0] ? (
+                  {coverOf(p) ? (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img src={p.images[0]} alt="" loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    <img src={coverOf(p)} alt="" loading="lazy" className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
                   ) : (
                     <TopoArt seed={i + 11} className="h-full w-full" />
                   )}

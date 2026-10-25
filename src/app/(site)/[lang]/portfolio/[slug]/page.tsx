@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
-import { Gallery, MapBlock } from "@/components/site/MediaBlocks";
+import { DocumentsBlock, Gallery, MapBlock } from "@/components/site/MediaBlocks";
 import { getPublicContent } from "@/lib/content";
 import { getDictionary, isLocale, tr, type DictKey } from "@/lib/i18n";
 import { LOCALES } from "@/lib/types";
@@ -60,7 +60,10 @@ export default async function PortfolioItemPage({ params }: Props) {
               </p>
             )}
           </section>
-          <Gallery images={item.images} title={t["portfolio.materials"]} emptyText={t["portfolio.noMaterials"]} />
+          {item.documents && item.documents.length > 0 && <DocumentsBlock documents={item.documents} title={t["portfolio.atlases"]} />}
+          {(item.images.length > 0 || !item.documents?.length) && (
+            <Gallery images={item.images} title={t["portfolio.materials"]} emptyText={t["portfolio.noMaterials"]} />
+          )}
           <MapBlock settings={item.map} title={t["projects.map"]} />
         </div>
       </div>

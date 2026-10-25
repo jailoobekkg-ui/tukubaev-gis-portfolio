@@ -1607,7 +1607,59 @@
         "zoom": null,
         "geojsonUrl": ""
       },
-      "published": true
+      "published": true,
+      "documents": [
+        {
+          "id": "atlas-aspara",
+          "title": {
+            "en": "Aspara River Basin Atlas (Kyrgyz part)",
+            "ru": "Атлас бассейна реки Аспара (кыргызская сторона)",
+            "ky": "Аспара дарыясынын бассейнинин атласы (Кыргыз тарабы)"
+          },
+          "base": "/atlases/aspara",
+          "pages": 18
+        },
+        {
+          "id": "atlas-isfana-aksuu",
+          "title": {
+            "en": "Isfana-Aksuu River Basin Atlas (Kyrgyz part)",
+            "ru": "Атлас бассейна реки Исфана-Ак-Суу (кыргызская сторона)",
+            "ky": "Исфана-Аксуу дарыясынын бассейнинин атласы (Кыргыз тарабы)"
+          },
+          "base": "/atlases/isfana-aksuu",
+          "pages": 19
+        },
+        {
+          "id": "atlas-isfara",
+          "title": {
+            "en": "Isfara River Basin Atlas (Kyrgyz part)",
+            "ru": "Атлас бассейна реки Исфара (кыргызская сторона)",
+            "ky": "Исфара дарыясынын бассейнинин атласы (Кыргыз тарабы)"
+          },
+          "base": "/atlases/isfara",
+          "pages": 19
+        },
+        {
+          "id": "atlas-kurkuroo",
+          "title": {
+            "en": "Kurkuroo River Basin Atlas (Kyrgyz part)",
+            "ru": "Атлас бассейна реки Куркуроо (кыргызская сторона)",
+            "ky": "Күркүрөө дарыясынын бассейнинин атласы (Кыргыз тарабы)"
+          },
+          "base": "/atlases/kurkuroo",
+          "pages": 23
+        },
+        {
+          "id": "atlas-padysha-ata",
+          "title": {
+            "en": "Padysha-Ata River Basin Atlas (Kyrgyz part)",
+            "ru": "Атлас бассейна реки Падыша-Ата (кыргызская сторона)",
+            "ky": "Падыша-Ата дарыясынын бассейнинин атласы (Кыргыз тарабы)"
+          },
+          "base": "/atlases/padysha-ata",
+          "pages": 20
+        }
+      ]
     },
     {
       "id": "pf-lulucf-map",

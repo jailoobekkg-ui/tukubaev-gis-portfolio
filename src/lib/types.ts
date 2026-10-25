@@ -113,6 +113,14 @@ export type SkillGroup = {
   published: boolean;
 };
 
+/** A multi-page publication (e.g. an atlas) rendered to images: {base}/page-01.jpg … page-NN.jpg (+ -thumb.jpg). */
+export type PageDocument = {
+  id: string;
+  title: I18n;
+  base: string;
+  pages: number;
+};
+
 export type PortfolioItem = {
   id: string;
   slug: string;
@@ -123,6 +131,7 @@ export type PortfolioItem = {
   year: string;
   projectSlug: string;
   images: string[];
+  documents?: PageDocument[];
   map: MapSettings;
   published: boolean;
 };

@@ -1,11 +1,88 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Icon from "@/components/Icon";
 import Modal from "@/components/ui/Modal";
 import { useI18n } from "@/components/I18nProvider";
-import type { MapSettings } from "@/lib/types";
+import { tr } from "@/lib/i18n";
+import type { MapSettings, PageDocument } from "@/lib/types";
+
+const pageUrl = (doc: PageDocument, n: number, thumb = false) => `${doc.base}/page-${String(n).padStart(2, "0")}${thumb ? "-thumb" : ""}.jpg`;
+
+/** Multi-page publications (atlases): covers grid + page-by-page viewer. */
+export function DocumentsBlock({ documents, title }: { documents: PageDocument[]; title: string }) {
+  const { locale, t } = useI18n();
+  const [doc, setDoc] = useState<PageDocument | null>(null);
+  const [page, setPage] = useState(1);
+
+  const go = (delta: number) => doc && setPage((p) => Math.min(doc.pages, Math.max(1, p + delta)));
+
+  useEffect(() => {
+    if (!doc) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight") go(1);
+      if (e.key === "ArrowLeft") go(-1);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [doc]);
+
+  return (
+    <section className="card p-4">
+      <h2 className="mb-3 flex items-center gap-2 px-1 font-display font-semibold">
+        <Icon name="file" className="h-4 w-4 text-accent" /> {title}
+      </h2>
+      <ul className="grid grid-cols-2 gap-3 md:grid-cols-3">
+        {documents.map((d) => (
+          <li key={d.id}>
+            <button
+              type="button"
+              onClick={() => {
+                setDoc(d);
+                setPage(1);
+              }}
+              className="group block w-full overflow-hidden rounded-xl border border-line/15 text-left transition hover:border-accent/50"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={pageUrl(d, 1, true)} alt="" loading="lazy" className="aspect-[1.414] w-full object-cover transition group-hover:scale-[1.03]" />
+              <span className="block px-3 py-2">
+                <span className="block text-sm font-medium leading-snug">{tr(d.title, locale)}</span>
+                <span className="block text-xs text-muted">{t("docs.pages", { n: d.pages })}</span>
+              </span>
+            </button>
+          </li>
+        ))}
+      </ul>
+
+      <Modal open={!!doc} onClose={() => setDoc(null)} title={doc ? tr(doc.title, locale) : ""} closeLabel={t("common.close")} wide>
+        {doc && (
+          <div>
+            <div className="flex items-center gap-2">
+              <button type="button" className="btn-ghost px-2" disabled={page === 1} onClick={() => go(-1)} aria-label={t("common.previous")}>
+                <Icon name="chevron-left" />
+              </button>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={pageUrl(doc, page)} alt={`${tr(doc.title, locale)} — ${t("docs.page", { n: page, total: doc.pages })}`} className="mx-auto max-h-[72vh] min-w-0 flex-1 rounded-lg bg-white object-contain" />
+              <button type="button" className="btn-ghost px-2" disabled={page === doc.pages} onClick={() => go(1)} aria-label={t("common.next")}>
+                <Icon name="chevron-right" />
+              </button>
+            </div>
+            {/* preload the next page */}
+            {page < doc.pages && <link rel="prefetch" as="image" href={pageUrl(doc, page + 1)} />}
+            <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-sm">
+              <span className="text-muted" aria-live="polite">{t("docs.page", { n: page, total: doc.pages })}</span>
+              <a href={pageUrl(doc, page)} target="_blank" rel="noopener" className="inline-flex items-center gap-1 text-accent hover:underline">
+                <Icon name="external" className="h-4 w-4" /> {t("docs.fullSize")}
+              </a>
+            </div>
+          </div>
+        )}
+      </Modal>
+    </section>
+  );
+}
 
 const ProjectMap = dynamic(() => import("@/components/map/ProjectMap"), {
   ssr: false,
