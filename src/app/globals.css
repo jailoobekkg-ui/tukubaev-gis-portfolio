@@ -4,14 +4,14 @@
 
 /* Colour tokens as "R G B" so Tailwind can apply opacity (bg-accent/20). */
 :root {
-  --bg: 244 247 251;
-  --bg2: 255 255 255;
+  --bg: 250 246 238;    /* milky #FAF6EE */
+  --bg2: 255 252 246;   /* warm white #FFFCF6 */
   --fg: 11 18 32;
   --muted: 71 85 105;
   --accent: 2 132 199;
   --accent2: 22 163 74;
   --line: 15 23 42;
-  --glass: 255 255 255;
+  --glass: 255 252 246;
   color-scheme: light;
 }
 .dark {
