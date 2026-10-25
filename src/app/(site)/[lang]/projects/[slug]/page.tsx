@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Icon from "@/components/Icon";
-import { Gallery, MapBlock } from "@/components/site/MediaBlocks";
+import { DocumentsBlock, Gallery, MapBlock } from "@/components/site/MediaBlocks";
 import { getPublicContent } from "@/lib/content";
 import { getDictionary, isLocale, tr, trList } from "@/lib/i18n";
 import { LOCALES } from "@/lib/types";
@@ -68,6 +68,7 @@ export default async function ProjectPage({ params }: Props) {
                 ))}
               </ul>
             </section>
+            {p.documents && p.documents.length > 0 && <DocumentsBlock documents={p.documents} title={t["projects.basinMaps"]} kind="maps" />}
             {p.images.length > 0 && <Gallery images={p.images} title={t["projects.gallery"]} emptyText={t["projects.noImages"]} />}
             {hasOwnMap(p.map) && <MapBlock settings={p.map} title={t["projects.map"]} />}
           </div>

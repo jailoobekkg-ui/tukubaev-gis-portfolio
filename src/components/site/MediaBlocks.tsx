@@ -10,7 +10,10 @@ import type { MapSettings, PageDocument } from "@/lib/types";
 const pageUrl = (doc: PageDocument, n: number, thumb = false) => `${doc.base}/page-${String(n).padStart(2, "0")}${thumb ? "-thumb" : ""}.jpg`;
 
 /** Multi-page publications (atlases): covers grid + page-by-page viewer. */
-export function DocumentsBlock({ documents, title }: { documents: PageDocument[]; title: string }) {
+/** kind="maps" labels items as maps ("Map 3 of 29") instead of pages. */
+export function DocumentsBlock({ documents, title, kind = "pages" }: { documents: PageDocument[]; title: string; kind?: "pages" | "maps" }) {
+  const countKey = kind === "maps" ? "docs.maps" : "docs.pages";
+  const posKey = kind === "maps" ? "docs.map" : "docs.page";
   const { locale, t } = useI18n();
   const [doc, setDoc] = useState<PageDocument | null>(null);
   const [page, setPage] = useState(1);
@@ -48,7 +51,7 @@ export function DocumentsBlock({ documents, title }: { documents: PageDocument[]
               <img src={pageUrl(d, 1, true)} alt="" loading="lazy" className="aspect-[1.414] w-full object-cover transition group-hover:scale-[1.03]" />
               <span className="block px-3 py-2">
                 <span className="block text-sm font-medium leading-snug">{tr(d.title, locale)}</span>
-                <span className="block text-xs text-muted">{t("docs.pages", { n: d.pages })}</span>
+                <span className="block text-xs text-muted">{t(countKey, { n: d.pages })}</span>
               </span>
             </button>
           </li>
@@ -63,7 +66,7 @@ export function DocumentsBlock({ documents, title }: { documents: PageDocument[]
                 <Icon name="chevron-left" />
               </button>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={pageUrl(doc, page)} alt={`${tr(doc.title, locale)} — ${t("docs.page", { n: page, total: doc.pages })}`} className="mx-auto max-h-[72vh] min-w-0 flex-1 rounded-lg bg-white object-contain" />
+              <img src={pageUrl(doc, page)} alt={`${tr(doc.title, locale)} — ${t(posKey, { n: page, total: doc.pages })}`} className="mx-auto max-h-[72vh] min-w-0 flex-1 rounded-lg bg-white object-contain" />
               <button type="button" className="btn-ghost px-2" disabled={page === doc.pages} onClick={() => go(1)} aria-label={t("common.next")}>
                 <Icon name="chevron-right" />
               </button>
@@ -71,7 +74,7 @@ export function DocumentsBlock({ documents, title }: { documents: PageDocument[]
             {/* preload the next page */}
             {page < doc.pages && <link rel="prefetch" as="image" href={pageUrl(doc, page + 1)} />}
             <div className="mt-3 flex flex-wrap items-center justify-between gap-2 text-sm">
-              <span className="text-muted" aria-live="polite">{t("docs.page", { n: page, total: doc.pages })}</span>
+              <span className="text-muted" aria-live="polite">{t(posKey, { n: page, total: doc.pages })}</span>
               <a href={pageUrl(doc, page)} target="_blank" rel="noopener" className="inline-flex items-center gap-1 text-accent hover:underline">
                 <Icon name="external" className="h-4 w-4" /> {t("docs.fullSize")}
               </a>

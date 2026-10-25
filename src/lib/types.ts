@@ -73,6 +73,8 @@ export type Project = {
   activities: I18nList;
   technologies: string[];
   images: string[];
+  /** Map sets shown with the page-by-page viewer (e.g. basin plan maps) */
+  documents?: PageDocument[];
   map: MapSettings;
   published: boolean;
 };

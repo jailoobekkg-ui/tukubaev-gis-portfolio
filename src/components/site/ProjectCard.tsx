@@ -32,7 +32,7 @@ export function TopoArt({ seed = 1, className = "" }: { seed?: number; className
 }
 
 export default function ProjectCard({ project, locale, t, index }: { project: Project; locale: Locale; t: Dict; index: number }) {
-  const cover = project.images[0];
+  const cover = project.images[0] || (project.documents?.[0] ? `${project.documents[0].base}/page-01-thumb.jpg` : "");
   return (
     <article className="card card-hover group flex h-full flex-col overflow-hidden">
       <div className="relative h-40 overflow-hidden">

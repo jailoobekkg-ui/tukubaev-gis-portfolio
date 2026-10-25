@@ -632,7 +632,59 @@
         "zoom": null,
         "geojsonUrl": ""
       },
-      "published": true
+      "published": true,
+      "documents": [
+        {
+          "id": "basin-issyk-kul-tarim",
+          "title": {
+            "en": "Issyk-Kul – Tarim Basin",
+            "ru": "Иссык-Куль – Таримский бассейн",
+            "ky": "Ысык-Көл – Тарим бассейни"
+          },
+          "base": "/basin-maps/issyk-kul-tarim",
+          "pages": 8
+        },
+        {
+          "id": "basin-chu",
+          "title": {
+            "en": "Chu River Basin",
+            "ru": "Чуйский речной бассейн",
+            "ky": "Чүй дарыясынын бассейни"
+          },
+          "base": "/basin-maps/chu",
+          "pages": 15
+        },
+        {
+          "id": "basin-naryn-syr-darya",
+          "title": {
+            "en": "Naryn – Syr Darya River Basin",
+            "ru": "Нарын-Сырдарьинский речной бассейн",
+            "ky": "Нарын – Сыр-Дарыя дарыя бассейни"
+          },
+          "base": "/basin-maps/naryn-syr-darya",
+          "pages": 26
+        },
+        {
+          "id": "basin-kara-darya-syr-darya",
+          "title": {
+            "en": "Kara-Darya – Syr Darya Basin",
+            "ru": "Кара-Дарья – Сыр-Дарьинский бассейн",
+            "ky": "Кара-Дарыя – Сыр-Дарыя бассейни"
+          },
+          "base": "/basin-maps/kara-darya-syr-darya",
+          "pages": 29
+        },
+        {
+          "id": "basin-talas",
+          "title": {
+            "en": "Talas River Basin",
+            "ru": "Таласский речной бассейн",
+            "ky": "Талас дарыясынын бассейни"
+          },
+          "base": "/basin-maps/talas",
+          "pages": 6
+        }
+      ]
     },
     {
       "id": "prj-fao-inrm",
