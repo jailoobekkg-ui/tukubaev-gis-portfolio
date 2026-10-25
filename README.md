@@ -119,14 +119,14 @@ Nginx как обратный прокси на `localhost:3000` (с загол�
 
 ### Текущая публикация — Vercel
 
-Сайт опубликован на https://tukubaev-gis-portfolio.vercel.app и подключён к репозиторию GitHub: каждый `git push` в ветку `main` автоматически пересобирает и публикует сайт (1–2 минуты).
+Сайт опубликован на https://jailoobek.xyz (домен куплен в Vercel, DNS — Vercel DNS; `www.jailoobek.xyz` и `tukubaev-gis-portfolio.vercel.app` перенаправляют на основной домен) и подключён к репозиторию GitHub: каждый `git push` в ветку `main` автоматически пересобирает и публикует сайт (1–2 минуты).
 
 Ограничения Vercel (файловая система только для чтения):
 - админка на Vercel отключена (не заданы `ADMIN_PASSWORD_HASH` и `AUTH_SECRET`) — содержимое редактируйте в локальной админке (`npm run dev` → http://localhost:3000/admin), затем `git add -A`, `git commit`, `git push`;
 - форма обратной связи не сохраняет сообщения — посетители видят email для связи;
 - сканы сертификатов (`data/documents/`) не входят в репозиторий и на Vercel не показываются.
 
-В Vercel задана переменная `NEXT_PUBLIC_SITE_URL=https://tukubaev-gis-portfolio.vercel.app`. При подключении своего домена поменяйте её в Vercel → Settings → Environment Variables.
+В Vercel задана переменная `NEXT_PUBLIC_SITE_URL=https://jailoobek.xyz` — от неё строятся sitemap, canonical и hreflang. При смене домена поменяйте её в Vercel → Settings → Environment Variables и пересоберите сайт. Домен продлевается в Vercel ежегодно (следующее продление — 26.10.2027).
 
 ### После публикации
 
