@@ -30,6 +30,7 @@ const en = {
   "hero.mapCaption": "Kyrgyz Republic · WGS 84",
   "hero.scroll": "Scroll",
   "hero.northArrow": "North–south arrow",
+  "hero.drone": "Survey drone",
   "hero.photoAlt": "Surveying theodolite on a tripod",
 
   "about.kicker": "About",

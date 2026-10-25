@@ -132,6 +132,27 @@ body {
 @keyframes th-beam {
   to { stroke-dashoffset: -26; }
 }
+/* Hero drone: hover bob, spinning rotors, blinking status light */
+.dr-hover {
+  animation: dr-hover 3.2s ease-in-out infinite;
+}
+.dr-rotor {
+  animation: dr-spin 0.35s linear infinite;
+}
+.dr-blink {
+  animation: dr-blink 1.6s steps(2, jump-none) infinite;
+}
+@keyframes dr-hover {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes dr-spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes dr-blink {
+  0% { opacity: 1; }
+  100% { opacity: 0.25; }
+}
 .th-ping {
   animation: th-ping 2.4s ease-out infinite;
 }

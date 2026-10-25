@@ -7,6 +7,7 @@ import Icon from "@/components/Icon";
 import { useI18n } from "@/components/I18nProvider";
 import TopoCanvas from "./TopoCanvas";
 import TheodoliteArt from "./TheodoliteArt";
+import DroneArt from "./DroneArt";
 
 type Props = {
   name: string;
@@ -102,6 +103,9 @@ export default function Hero({ name, headline, subtitle, tagline, roles, years, 
               ) : (
                 <TheodoliteArt className="absolute inset-0 h-full w-full" />
               )}
+              <div className="pointer-events-none absolute left-2 top-2 sm:left-3 sm:top-3">
+                <DroneArt label={t("hero.drone")} className="h-20 w-20 sm:h-24 sm:w-24" />
+              </div>
               <div className="pointer-events-none absolute right-3 top-3 rounded-lg bg-bg/80 px-2 py-1.5 backdrop-blur">
                 <NorthArrow label={t("hero.northArrow")} />
               </div>

@@ -31,6 +31,7 @@ const ru: Dict = {
   "hero.mapCaption": "Кыргызская Республика · WGS 84",
   "hero.scroll": "Вниз",
   "hero.northArrow": "Указатель север — юг",
+  "hero.drone": "БПЛА для аэрофотосъёмки",
   "hero.photoAlt": "Геодезический теодолит на штативе",
 
   "about.kicker": "Обо мне",

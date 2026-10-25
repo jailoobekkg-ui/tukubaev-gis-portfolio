@@ -9,30 +9,32 @@ import { loadKyrgyzstan } from "@/components/map/layers";
  * Line-art in the site palette; colours come from Tailwind tokens so it follows light/dark theme.
  */
 
-// Orthographic globe behind the instrument.
-const GLOBE = { cx: 285, cy: 128, r: 105, lon0: 50, lat0: 30 };
+type View = { cx: number; cy: number; r: number; lon0: number; lat0: number };
+
+// Orthographic globe centred behind the instrument; its rotation puts Kyrgyzstan up-right of the telescope.
+const GLOBE: View = { cx: 200, cy: 128, r: 128, lon0: 12, lat0: 20 };
 const KG_CENTER = { lon: 74.7, lat: 41.3 };
 const PIVOT = { x: 200, y: 166 }; // telescope trunnion axis
 const rad = (d: number) => (d * Math.PI) / 180;
 const r1 = (n: number) => Math.round(n * 10) / 10;
 
-function project(lon: number, lat: number) {
-  const l = rad(lon - GLOBE.lon0);
+function project(lon: number, lat: number, v: View = GLOBE) {
+  const l = rad(lon - v.lon0);
   const p = rad(lat);
-  const p0 = rad(GLOBE.lat0);
+  const p0 = rad(v.lat0);
   return {
-    x: GLOBE.cx + GLOBE.r * Math.cos(p) * Math.sin(l),
-    y: GLOBE.cy - GLOBE.r * (Math.cos(p0) * Math.sin(p) - Math.sin(p0) * Math.cos(p) * Math.cos(l)),
+    x: v.cx + v.r * Math.cos(p) * Math.sin(l),
+    y: v.cy - v.r * (Math.cos(p0) * Math.sin(p) - Math.sin(p0) * Math.cos(p) * Math.cos(l)),
     visible: Math.sin(p0) * Math.sin(p) + Math.cos(p0) * Math.cos(p) * Math.cos(l) >= 0,
   };
 }
 
 /** Polyline through lon/lat points, broken where it passes behind the globe. */
-function linePath(points: [number, number][]) {
+function linePath(points: [number, number][], v: View = GLOBE) {
   let d = "";
   let pen = false;
   for (const [lon, lat] of points) {
-    const q = project(lon, lat);
+    const q = project(lon, lat, v);
     if (!q.visible) {
       pen = false;
       continue;
@@ -53,28 +55,29 @@ const GRATICULE = [
 // Aim: the telescope rotates about its axis so the line of sight meets Kyrgyzstan.
 const TARGET = project(KG_CENTER.lon, KG_CENTER.lat);
 const AIM_DEG = (Math.atan2(TARGET.y - PIVOT.y, TARGET.x - PIVOT.x) * 180) / Math.PI;
-const LOUPE_R = 24;
-const LOUPE_ZOOM = 4.2;
-const OBJECTIVE ={ x: PIVOT.x + 92 * Math.cos(rad(AIM_DEG)), y: PIVOT.y + 92 * Math.sin(rad(AIM_DEG)) };
+const LOUPE_R = 20;
+const OBJECTIVE = { x: PIVOT.x + 92 * Math.cos(rad(AIM_DEG)), y: PIVOT.y + 92 * Math.sin(rad(AIM_DEG)) };
+// The eyepiece shows Kyrgyzstan face-on (no limb foreshortening), scaled to fill the ring.
+const LOUPE_VIEW: View = { cx: TARGET.x, cy: TARGET.y, r: 230, lon0: KG_CENTER.lon, lat0: KG_CENTER.lat };
 
 type Ring = [number, number][];
-function countryPath(fc: FeatureCollection) {
+function countryPath(fc: FeatureCollection, v: View) {
   const rings: Ring[] = [];
   for (const f of fc.features) {
     const g = f.geometry;
     if (g.type === "Polygon") rings.push(...(g.coordinates as Ring[]));
     if (g.type === "MultiPolygon") for (const poly of g.coordinates as Ring[][]) rings.push(...poly);
   }
-  return rings.map((ring) => linePath(ring) + "Z").join("");
+  return rings.map((ring) => linePath(ring, v) + "Z").join("");
 }
 
 export default function TheodoliteArt({ className = "" }: { className?: string }) {
   const ticks = Array.from({ length: 36 }, (_, i) => i * 10);
-  const [kg, setKg] = useState("");
+  const [kg, setKg] = useState({ globe: "", loupe: "" });
 
   useEffect(() => {
     let alive = true;
-    loadKyrgyzstan().then((fc) => alive && fc && setKg(countryPath(fc)));
+    loadKyrgyzstan().then((fc) => alive && fc && setKg({ globe: countryPath(fc, GLOBE), loupe: countryPath(fc, LOUPE_VIEW) }));
     return () => {
       alive = false;
     };
@@ -125,7 +128,7 @@ export default function TheodoliteArt({ className = "" }: { className?: string }
             <path key={i} d={d} />
           ))}
         </g>
-        {kg && <path d={kg} className="fill-accent2 stroke-accent2" fillOpacity="0.75" strokeWidth="1" strokeLinejoin="round" />}
+        {kg.globe && <path d={kg.globe} className="fill-accent2 stroke-accent2" fillOpacity="0.75" strokeWidth="1" strokeLinejoin="round" />}
       </g>
 
       {/* horizontal-angle sweep */}
@@ -213,17 +216,9 @@ export default function TheodoliteArt({ className = "" }: { className?: string }
       <line x1={r1(OBJECTIVE.x)} y1={r1(OBJECTIVE.y)} x2={r1(TARGET.x)} y2={r1(TARGET.y)} className="th-beam stroke-accent" strokeWidth="1.6" />
       {/* reticle as an eyepiece: Kyrgyzstan magnified inside the ring */}
       <circle cx={r1(TARGET.x)} cy={r1(TARGET.y)} r={LOUPE_R} className="fill-bg2" fillOpacity="0.88" />
-      {kg && (
+      {kg.loupe && (
         <g clipPath="url(#th-loupe-clip)">
-          <path
-            d={kg}
-            transform={`translate(${r1(TARGET.x)} ${r1(TARGET.y)}) scale(${LOUPE_ZOOM}) translate(${-r1(TARGET.x)} ${-r1(TARGET.y)})`}
-            className="fill-accent2 stroke-accent2"
-            fillOpacity="0.55"
-            strokeWidth="1.2"
-            vectorEffect="non-scaling-stroke"
-            strokeLinejoin="round"
-          />
+          <path d={kg.loupe} className="fill-accent2 stroke-accent2" fillOpacity="0.55" strokeWidth="1.2" strokeLinejoin="round" />
         </g>
       )}
       <g className="stroke-accent" fill="none" strokeWidth="1.3">
