@@ -1493,6 +1493,30 @@
         ]
       },
       "published": true
+    },
+    {
+      "id": "sk-webmobile",
+      "icon": "code",
+      "title": {
+        "en": "Website & Mobile App Development",
+        "ru": "Создание сайтов и мобильных приложений",
+        "ky": "Сайт жана мобилдик тиркеме жасоо"
+      },
+      "items": {
+        "en": [
+          "Websites built from scratch",
+          "Mobile applications"
+        ],
+        "ru": [
+          "Создание сайтов с нуля",
+          "Разработка мобильных приложений"
+        ],
+        "ky": [
+          "Сайттарды нөлдөн баштап жасоо",
+          "Мобилдик тиркемелерди жасоо"
+        ]
+      },
+      "published": true
     }
   ],
   "portfolio": [
