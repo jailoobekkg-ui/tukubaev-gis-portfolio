@@ -31,6 +31,7 @@ const ky: Dict = {
   "hero.coords": "Курсордун координаттары",
   "hero.mapCaption": "Кыргыз Республикасы · WGS 84",
   "hero.scroll": "Ылдый",
+  "hero.northArrow": "Түндүк — түштүк белгиси",
   "hero.photoAlt": "Штативдеги геодезиялык теодолит",
 
   "about.kicker": "Мен жөнүндө",

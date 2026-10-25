@@ -29,6 +29,7 @@ const en = {
   "hero.coords": "Cursor coordinates",
   "hero.mapCaption": "Kyrgyz Republic · WGS 84",
   "hero.scroll": "Scroll",
+  "hero.northArrow": "North–south arrow",
   "hero.photoAlt": "Surveying theodolite on a tripod",
 
   "about.kicker": "About",

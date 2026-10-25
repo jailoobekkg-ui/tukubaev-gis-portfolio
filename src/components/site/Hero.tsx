@@ -20,13 +20,18 @@ type Props = {
   heroImage?: string;
 };
 
-// Illustrative instrument readouts that cycle on the first screen.
-const ANGLES = [
-  { hz: "127°34′20″", v: "89°58′10″" },
-  { hz: "214°05′48″", v: "91°12′36″" },
-  { hz: "048°41′02″", v: "88°47′55″" },
-  { hz: "302°16′37″", v: "90°03′21″" },
-];
+/** North–south arrow in the map-sheet style: N half filled, S half outlined. */
+function NorthArrow({ label }: { label: string }) {
+  return (
+    <svg viewBox="0 0 48 88" className="h-20 w-11" role="img" aria-label={label}>
+      <text x="24" y="11" textAnchor="middle" className="fill-accent2 font-mono" fontSize="12" fontWeight="700">N</text>
+      <path d="M24 16 L33 44 L24 40 L15 44 Z" className="fill-accent2" />
+      <path d="M24 72 L33 44 L24 48 L15 44 Z" className="fill-none stroke-muted" strokeWidth="1.4" strokeLinejoin="round" />
+      <circle cx="24" cy="44" r="2.4" className="fill-bg2 stroke-accent2" strokeWidth="1.2" />
+      <text x="24" y="86" textAnchor="middle" className="fill-muted font-mono" fontSize="12" fontWeight="700">S</text>
+    </svg>
+  );
+}
 
 export default function Hero({ name, headline, subtitle, tagline, roles, years, cvHref, heroImage }: Props) {
   const { locale, t } = useI18n();
@@ -37,7 +42,6 @@ export default function Hero({ name, headline, subtitle, tagline, roles, years, 
     return () => clearInterval(id);
   }, []);
 
-  const angle = ANGLES[tick % ANGLES.length];
   const role = roles.length ? roles[tick % roles.length] : "";
 
   return (
@@ -98,9 +102,8 @@ export default function Hero({ name, headline, subtitle, tagline, roles, years, 
               ) : (
                 <TheodoliteArt className="absolute inset-0 h-full w-full" />
               )}
-              <div className="pointer-events-none absolute right-3 top-3 rounded-lg bg-bg/80 px-3 py-2 text-right font-mono text-[11px] leading-5 backdrop-blur">
-                <div className="text-accent2">Hz {angle.hz}</div>
-                <div className="text-muted">V&nbsp; {angle.v}</div>
+              <div className="pointer-events-none absolute right-3 top-3 rounded-lg bg-bg/80 px-2 py-1.5 backdrop-blur">
+                <NorthArrow label={t("hero.northArrow")} />
               </div>
             </div>
           </div>
