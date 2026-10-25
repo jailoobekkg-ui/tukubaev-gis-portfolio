@@ -7,7 +7,6 @@ import Icon from "@/components/Icon";
 import { useI18n } from "@/components/I18nProvider";
 import TopoCanvas from "./TopoCanvas";
 import TheodoliteArt from "./TheodoliteArt";
-import { DEMO_POINTS, toDMS } from "@/components/map/layers";
 
 type Props = {
   name: string;
@@ -21,7 +20,7 @@ type Props = {
   heroImage?: string;
 };
 
-// Illustrative instrument readouts that cycle with the station names.
+// Illustrative instrument readouts that cycle on the first screen.
 const ANGLES = [
   { hz: "127°34′20″", v: "89°58′10″" },
   { hz: "214°05′48″", v: "91°12′36″" },
@@ -38,7 +37,6 @@ export default function Hero({ name, headline, subtitle, tagline, roles, years, 
     return () => clearInterval(id);
   }, []);
 
-  const place = DEMO_POINTS[tick % DEMO_POINTS.length];
   const angle = ANGLES[tick % ANGLES.length];
   const role = roles.length ? roles[tick % roles.length] : "";
 
@@ -100,17 +98,9 @@ export default function Hero({ name, headline, subtitle, tagline, roles, years, 
               ) : (
                 <TheodoliteArt className="absolute inset-0 h-full w-full" />
               )}
-              <div className="pointer-events-none absolute left-3 top-3 rounded-lg bg-bg/80 px-3 py-2 font-mono text-[11px] leading-5 text-fg backdrop-blur">
-                <div className="text-accent">{place.name}</div>
-                <div>{toDMS(place.lat, "N", "S")}</div>
-                <div>{toDMS(place.lng, "E", "W")}</div>
-              </div>
               <div className="pointer-events-none absolute right-3 top-3 rounded-lg bg-bg/80 px-3 py-2 text-right font-mono text-[11px] leading-5 backdrop-blur">
                 <div className="text-accent2">Hz {angle.hz}</div>
                 <div className="text-muted">V&nbsp; {angle.v}</div>
-              </div>
-              <div className="pointer-events-none absolute bottom-3 left-3 rounded-md bg-bg/80 px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-muted backdrop-blur">
-                {t("hero.mapCaption")}
               </div>
             </div>
           </div>
