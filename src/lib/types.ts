@@ -26,6 +26,8 @@ export type Profile = {
   location: I18n;
   careerStartYear: number;
   photo: string;
+  /** Photo for the first screen (e.g. a theodolite). Empty = drawn illustration. */
+  heroImage?: string;
   /** Optional uploaded CV file (PDF). When empty the generated CV page is used. */
   cvFile: string;
   languages: { name: I18n; level: I18n }[];

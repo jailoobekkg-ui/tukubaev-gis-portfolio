@@ -31,6 +31,7 @@ export const profileFields: FieldDef[] = [
   { key: "location", label: "Местоположение", type: "i18n", help: "Только страна/город, без домашнего адреса" },
   { key: "careerStartYear", label: "Год начала карьеры", type: "number", help: "Стаж считается автоматически" },
   { key: "cvFile", label: "Файл CV (PDF)", type: "image", help: "Пусто — используется автоматическая страница CV" },
+  { key: "heroImage", label: "Фото первого экрана (теодолит)", type: "image", help: "Пусто — рисованный теодолит. Фото автоматически тонируется в цвета сайта" },
   { key: "photo", label: "Фото (необязательно)", type: "image" },
 ];
 

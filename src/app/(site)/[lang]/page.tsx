@@ -54,6 +54,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         roles={p.roles}
         years={years}
         cvHref={cvHref}
+        heroImage={p.heroImage}
       />
       <Stats items={p.highlights.map((h) => ({ title: format(tr(h.title, lang), { years }), text: tr(h.text, lang) }))} />
 

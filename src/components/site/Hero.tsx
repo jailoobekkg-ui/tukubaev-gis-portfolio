@@ -1,18 +1,13 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Icon from "@/components/Icon";
 import { useI18n } from "@/components/I18nProvider";
 import TopoCanvas from "./TopoCanvas";
+import TheodoliteArt from "./TheodoliteArt";
 import { DEMO_POINTS, toDMS } from "@/components/map/layers";
-
-const HeroMap = dynamic(() => import("@/components/map/HeroMap"), {
-  ssr: false,
-  loading: () => <div className="h-full w-full animate-pulse bg-bg2" />,
-});
 
 type Props = {
   name: string;
@@ -22,11 +17,20 @@ type Props = {
   roles: string[];
   years: number;
   cvHref: string;
+  /** Optional photo uploaded in the admin panel; replaces the drawn theodolite. */
+  heroImage?: string;
 };
 
-export default function Hero({ name, headline, subtitle, tagline, roles, years, cvHref }: Props) {
+// Illustrative instrument readouts that cycle with the station names.
+const ANGLES = [
+  { hz: "127°34′20″", v: "89°58′10″" },
+  { hz: "214°05′48″", v: "91°12′36″" },
+  { hz: "048°41′02″", v: "88°47′55″" },
+  { hz: "302°16′37″", v: "90°03′21″" },
+];
+
+export default function Hero({ name, headline, subtitle, tagline, roles, years, cvHref, heroImage }: Props) {
   const { locale, t } = useI18n();
-  const [cursor, setCursor] = useState<[number, number] | null>(null);
   const [tick, setTick] = useState(0);
 
   useEffect(() => {
@@ -35,7 +39,7 @@ export default function Hero({ name, headline, subtitle, tagline, roles, years, 
   }, []);
 
   const place = DEMO_POINTS[tick % DEMO_POINTS.length];
-  const [lat, lng] = cursor ?? [place.lat, place.lng];
+  const angle = ANGLES[tick % ANGLES.length];
   const role = roles.length ? roles[tick % roles.length] : "";
 
   return (
@@ -83,14 +87,29 @@ export default function Hero({ name, headline, subtitle, tagline, roles, years, 
           className="relative"
         >
           <div className="card overflow-hidden p-1.5 shadow-glow">
-            <div className="relative h-[340px] overflow-hidden rounded-xl sm:h-[420px] lg:h-[480px]">
-              <HeroMap onMove={(a, b) => setCursor([a, b])} />
-              <div className="pointer-events-none absolute left-3 top-3 z-[500] rounded-lg bg-bg/80 px-3 py-2 font-mono text-[11px] leading-5 text-fg backdrop-blur">
-                <div className="text-accent">{cursor ? t("hero.coords") : place.name}</div>
-                <div>{toDMS(lat, "N", "S")}</div>
-                <div>{toDMS(lng, "E", "W")}</div>
+            <div className="relative h-[340px] overflow-hidden rounded-xl bg-bg2 sm:h-[420px] lg:h-[480px]">
+              <div className="grid-bg absolute inset-0" aria-hidden />
+              {heroImage ? (
+                <>
+                  {/* Owner's photo, tinted into the site palette */}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={heroImage} alt={t("hero.photoAlt")} className="absolute inset-0 h-full w-full object-cover grayscale contrast-125" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/45 via-bg/30 to-accent2/35 mix-blend-multiply dark:mix-blend-color" aria-hidden />
+                  <div className="absolute inset-0 bg-gradient-to-t from-bg/70 via-transparent to-transparent" aria-hidden />
+                </>
+              ) : (
+                <TheodoliteArt className="absolute inset-0 h-full w-full" />
+              )}
+              <div className="pointer-events-none absolute left-3 top-3 rounded-lg bg-bg/80 px-3 py-2 font-mono text-[11px] leading-5 text-fg backdrop-blur">
+                <div className="text-accent">{place.name}</div>
+                <div>{toDMS(place.lat, "N", "S")}</div>
+                <div>{toDMS(place.lng, "E", "W")}</div>
               </div>
-              <div className="pointer-events-none absolute bottom-3 left-3 z-[500] rounded-md bg-bg/80 px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-muted backdrop-blur">
+              <div className="pointer-events-none absolute right-3 top-3 rounded-lg bg-bg/80 px-3 py-2 text-right font-mono text-[11px] leading-5 backdrop-blur">
+                <div className="text-accent2">Hz {angle.hz}</div>
+                <div className="text-muted">V&nbsp; {angle.v}</div>
+              </div>
+              <div className="pointer-events-none absolute bottom-3 left-3 rounded-md bg-bg/80 px-2 py-1 font-mono text-[10px] uppercase tracking-widest text-muted backdrop-blur">
                 {t("hero.mapCaption")}
               </div>
             </div>
