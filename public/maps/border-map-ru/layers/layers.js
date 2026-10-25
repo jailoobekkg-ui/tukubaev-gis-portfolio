@@ -9,19 +9,19 @@ var wms_layers = [];
             
             
             source: new ol.source.XYZ({
-            attributions: ' ',
+            attributions: 'Tiles &copy; Esri &mdash; Esri, HERE, Garmin, FAO, NOAA, USGS, &copy; OpenStreetMap contributors',
                 url: 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}'
             })
         });
 
         var lyr_satelitegooglemaps_1 = new ol.layer.Tile({
-            'title': 'satelite googlemaps',
+            'title': 'Esri World Imagery',
             'opacity': 1.000000,
             
             
             source: new ol.source.XYZ({
-            attributions: ' ',
-                url: 'http://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}'
+            attributions: 'Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community',
+                url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
             })
         });
 
@@ -31,7 +31,7 @@ var wms_layers = [];
             
             
             source: new ol.source.XYZ({
-            attributions: ' ',
+            attributions: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors',
                 url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
             })
         });
