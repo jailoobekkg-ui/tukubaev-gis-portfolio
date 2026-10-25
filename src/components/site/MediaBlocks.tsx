@@ -12,10 +12,14 @@ const ProjectMap = dynamic(() => import("@/components/map/ProjectMap"), {
   loading: () => <div className="h-[360px] w-full animate-pulse rounded-xl bg-bg2" />,
 });
 
-/** A heavy ready-made web map: loaded only when the visitor asks for it. */
-function EmbeddedMap({ src, title }: { src: string; title: string }) {
-  const { t } = useI18n();
+/**
+ * A heavy ready-made web map: loaded only when the visitor asks for it.
+ * "{lang}" in the URL is replaced with the site language (en / ru / ky).
+ */
+function EmbeddedMap({ src: template, title }: { src: string; title: string }) {
+  const { locale, t } = useI18n();
   const [open, setOpen] = useState(false);
+  const src = template.replace("{lang}", locale);
   if (!open) {
     return (
       <div className="grid-bg flex h-[360px] flex-col items-center justify-center gap-3 rounded-xl border border-line/15 p-6 text-center">
