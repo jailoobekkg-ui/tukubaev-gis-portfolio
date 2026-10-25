@@ -1,11 +1,87 @@
-/**
- * Stylised theodolite / total station on a tripod over a survey point.
+"use client";
+
+import { useEffect, useState } from "react";
+import type { FeatureCollection } from "geojson";
+import { loadKyrgyzstan } from "@/components/map/layers";
+
+/*
+ * Stylised theodolite on a tripod in front of a globe; the telescope is aimed at Kyrgyzstan.
  * Line-art in the site palette; colours come from Tailwind tokens so it follows light/dark theme.
  */
+
+// Orthographic globe behind the instrument.
+const GLOBE = { cx: 285, cy: 128, r: 105, lon0: 50, lat0: 30 };
+const KG_CENTER = { lon: 74.7, lat: 41.3 };
+const PIVOT = { x: 200, y: 166 }; // telescope trunnion axis
+const rad = (d: number) => (d * Math.PI) / 180;
+const r1 = (n: number) => Math.round(n * 10) / 10;
+
+function project(lon: number, lat: number) {
+  const l = rad(lon - GLOBE.lon0);
+  const p = rad(lat);
+  const p0 = rad(GLOBE.lat0);
+  return {
+    x: GLOBE.cx + GLOBE.r * Math.cos(p) * Math.sin(l),
+    y: GLOBE.cy - GLOBE.r * (Math.cos(p0) * Math.sin(p) - Math.sin(p0) * Math.cos(p) * Math.cos(l)),
+    visible: Math.sin(p0) * Math.sin(p) + Math.cos(p0) * Math.cos(p) * Math.cos(l) >= 0,
+  };
+}
+
+/** Polyline through lon/lat points, broken where it passes behind the globe. */
+function linePath(points: [number, number][]) {
+  let d = "";
+  let pen = false;
+  for (const [lon, lat] of points) {
+    const q = project(lon, lat);
+    if (!q.visible) {
+      pen = false;
+      continue;
+    }
+    d += `${pen ? "L" : "M"}${r1(q.x)} ${r1(q.y)}`;
+    pen = true;
+  }
+  return d;
+}
+
+const range = (from: number, to: number, step: number) => Array.from({ length: Math.floor((to - from) / step) + 1 }, (_, i) => from + i * step);
+
+const GRATICULE = [
+  ...range(-180, 165, 15).map((lon) => linePath(range(-90, 90, 3).map((lat) => [lon, lat]))),
+  ...range(-75, 75, 15).map((lat) => linePath(range(-180, 180, 3).map((lon) => [lon, lat]))),
+].filter(Boolean);
+
+// Aim: the telescope rotates about its axis so the line of sight meets Kyrgyzstan.
+const TARGET = project(KG_CENTER.lon, KG_CENTER.lat);
+const AIM_DEG = (Math.atan2(TARGET.y - PIVOT.y, TARGET.x - PIVOT.x) * 180) / Math.PI;
+const LOUPE_R = 24;
+const LOUPE_ZOOM = 4.2;
+const OBJECTIVE ={ x: PIVOT.x + 92 * Math.cos(rad(AIM_DEG)), y: PIVOT.y + 92 * Math.sin(rad(AIM_DEG)) };
+
+type Ring = [number, number][];
+function countryPath(fc: FeatureCollection) {
+  const rings: Ring[] = [];
+  for (const f of fc.features) {
+    const g = f.geometry;
+    if (g.type === "Polygon") rings.push(...(g.coordinates as Ring[]));
+    if (g.type === "MultiPolygon") for (const poly of g.coordinates as Ring[][]) rings.push(...poly);
+  }
+  return rings.map((ring) => linePath(ring) + "Z").join("");
+}
+
 export default function TheodoliteArt({ className = "" }: { className?: string }) {
   const ticks = Array.from({ length: 36 }, (_, i) => i * 10);
+  const [kg, setKg] = useState("");
+
+  useEffect(() => {
+    let alive = true;
+    loadKyrgyzstan().then((fc) => alive && fc && setKg(countryPath(fc)));
+    return () => {
+      alive = false;
+    };
+  }, []);
+
   return (
-    <svg viewBox="0 0 400 480" className={className} role="img" aria-label="Theodolite on a tripod">
+    <svg viewBox="0 0 400 480" className={className} role="img" aria-label="Theodolite on a tripod aimed at Kyrgyzstan on a globe">
       <defs>
         <linearGradient id="th-body" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" style={{ stopColor: "rgb(var(--accent))", stopOpacity: 0.28 }} />
@@ -19,6 +95,17 @@ export default function TheodoliteArt({ className = "" }: { className?: string }
           <stop offset="0" style={{ stopColor: "rgb(var(--accent))", stopOpacity: 0.22 }} />
           <stop offset="1" style={{ stopColor: "rgb(var(--accent))", stopOpacity: 0 }} />
         </radialGradient>
+        <radialGradient id="th-globe" cx="0.38" cy="0.32" r="0.75">
+          <stop offset="0" style={{ stopColor: "rgb(var(--accent))", stopOpacity: 0.16 }} />
+          <stop offset="0.7" style={{ stopColor: "rgb(var(--accent))", stopOpacity: 0.05 }} />
+          <stop offset="1" style={{ stopColor: "rgb(var(--accent))", stopOpacity: 0.12 }} />
+        </radialGradient>
+        <clipPath id="th-globe-clip">
+          <circle cx={GLOBE.cx} cy={GLOBE.cy} r={GLOBE.r} />
+        </clipPath>
+        <clipPath id="th-loupe-clip">
+          <circle cx={r1(TARGET.x)} cy={r1(TARGET.y)} r={LOUPE_R - 1} />
+        </clipPath>
       </defs>
 
       {/* glow + contour rings around the station point */}
@@ -29,23 +116,34 @@ export default function TheodoliteArt({ className = "" }: { className?: string }
         ))}
       </g>
 
+      {/* globe with graticule and Kyrgyzstan */}
+      <g>
+        <circle cx={GLOBE.cx} cy={GLOBE.cy} r={GLOBE.r + 7} className="fill-accent" fillOpacity="0.05" />
+        <circle cx={GLOBE.cx} cy={GLOBE.cy} r={GLOBE.r} fill="url(#th-globe)" className="stroke-accent" strokeOpacity="0.55" strokeWidth="1.4" />
+        <g clipPath="url(#th-globe-clip)" fill="none" className="stroke-accent" strokeOpacity="0.28" strokeWidth="0.8">
+          {GRATICULE.map((d, i) => (
+            <path key={i} d={d} />
+          ))}
+        </g>
+        {kg && <path d={kg} className="fill-accent2 stroke-accent2" fillOpacity="0.75" strokeWidth="1" strokeLinejoin="round" />}
+      </g>
+
       {/* horizontal-angle sweep */}
       <g className="th-sweep" style={{ transformOrigin: "200px 166px" }}>
         <path d="M200 166 L360 120 A166 166 0 0 1 366 176 Z" className="fill-accent" fillOpacity="0.07" />
       </g>
-      <g fill="none" className="stroke-accent" strokeOpacity="0.35">
+      <g fill="none" className="stroke-accent" strokeOpacity="0.3">
         <circle cx="200" cy="166" r="150" strokeDasharray="2 10" />
         {ticks.map((a) => {
-          const r1 = 150;
-          const r2 = a % 90 === 0 ? 138 : 144;
-          const rad = (a * Math.PI) / 180;
+          const outer = 150;
+          const inner = a % 90 === 0 ? 138 : 144;
           return (
             <line
               key={a}
-              x1={200 + r1 * Math.cos(rad)}
-              y1={166 + r1 * Math.sin(rad)}
-              x2={200 + r2 * Math.cos(rad)}
-              y2={166 + r2 * Math.sin(rad)}
+              x1={r1(200 + outer * Math.cos(rad(a)))}
+              y1={r1(166 + outer * Math.sin(rad(a)))}
+              x2={r1(200 + inner * Math.cos(rad(a)))}
+              y2={r1(166 + inner * Math.sin(rad(a)))}
               strokeWidth={a % 90 === 0 ? 1.6 : 0.8}
             />
           );
@@ -62,7 +160,6 @@ export default function TheodoliteArt({ className = "" }: { className?: string }
         <path d="M168 302 L176 304 L104 466 L92 464 Z" fill="url(#th-leg)" />
         <path d="M196 306 L204 306 L206 472 L194 472 Z" fill="url(#th-leg)" />
         <path d="M224 304 L232 302 L308 464 L296 466 Z" fill="url(#th-leg)" />
-        {/* leg clamps */}
         <rect x="128" y="370" width="14" height="8" rx="2" transform="rotate(66 135 374)" className="fill-bg2" />
         <rect x="193" y="380" width="14" height="8" rx="2" className="fill-bg2" />
         <rect x="258" y="370" width="14" height="8" rx="2" transform="rotate(-66 265 374)" className="fill-bg2" />
@@ -72,14 +169,16 @@ export default function TheodoliteArt({ className = "" }: { className?: string }
       {/* tripod head + tribrach with levelling screws */}
       <g className="stroke-accent" strokeWidth="1.6">
         <ellipse cx="200" cy="300" rx="62" ry="10" className="fill-bg2" />
+        <rect x="150" y="280" width="100" height="14" rx="4" className="fill-bg2" />
         <rect x="150" y="280" width="100" height="14" rx="4" fill="url(#th-body)" />
         <circle cx="160" cy="287" r="5" className="fill-bg2" />
         <circle cx="240" cy="287" r="5" className="fill-bg2" />
         <circle cx="200" cy="294" r="4" className="fill-bg2" />
       </g>
 
-      {/* lower body with display */}
+      {/* lower body with display (opaque underlay keeps the globe behind the instrument) */}
       <g className="stroke-accent" strokeWidth="1.6">
+        <rect x="160" y="246" width="80" height="36" rx="7" className="fill-bg2" />
         <rect x="160" y="246" width="80" height="36" rx="7" fill="url(#th-body)" />
         <rect x="176" y="254" width="48" height="20" rx="3" className="fill-accent" fillOpacity="0.16" />
         <path d="M181 260 h22 M181 265 h30 M181 270 h16" strokeWidth="1" strokeOpacity="0.8" />
@@ -87,28 +186,55 @@ export default function TheodoliteArt({ className = "" }: { className?: string }
 
       {/* alidade standards + carry handle */}
       <g className="stroke-accent" strokeWidth="1.6" strokeLinejoin="round">
+        <path d="M164 248 L170 148 L186 148 L186 248 Z" className="fill-bg2" />
         <path d="M164 248 L170 148 L186 148 L186 248 Z" fill="url(#th-body)" />
+        <path d="M214 248 L214 148 L230 148 L236 248 Z" className="fill-bg2" />
         <path d="M214 248 L214 148 L230 148 L236 248 Z" fill="url(#th-body)" />
         <path d="M172 146 C176 112 224 112 228 146" fill="none" strokeWidth="5" strokeLinecap="round" strokeOpacity="0.85" />
         <circle cx="178" cy="214" r="6" className="fill-bg2" />
         <circle cx="222" cy="214" r="6" className="fill-bg2" />
       </g>
 
-      {/* vertical circle + telescope */}
+      {/* vertical circle + telescope, tilted towards Kyrgyzstan */}
       <g className="stroke-accent" strokeWidth="1.6">
+        <circle cx="200" cy="166" r="26" className="fill-bg2" />
         <circle cx="200" cy="166" r="26" fill="url(#th-body)" />
         <circle cx="200" cy="166" r="18" fill="none" strokeOpacity="0.6" strokeDasharray="1.5 3" />
-        <rect x="118" y="155" width="168" height="22" rx="9" fill="url(#th-body)" />
-        <rect x="104" y="158" width="16" height="16" rx="3" className="fill-bg2" />
-        <ellipse cx="288" cy="166" rx="7" ry="15" className="fill-accent" fillOpacity="0.35" />
+        <g transform={`rotate(${r1(AIM_DEG)} ${PIVOT.x} ${PIVOT.y})`}>
+          <rect x="118" y="155" width="168" height="22" rx="9" className="fill-bg2" />
+          <rect x="118" y="155" width="168" height="22" rx="9" fill="url(#th-body)" />
+          <rect x="104" y="158" width="16" height="16" rx="3" className="fill-bg2" />
+          <ellipse cx="288" cy="166" rx="7" ry="15" className="fill-accent" fillOpacity="0.35" />
+        </g>
         <circle cx="200" cy="166" r="5" className="fill-accent" />
       </g>
 
-      {/* line of sight to a prism target */}
-      <line x1="296" y1="166" x2="392" y2="138" className="th-beam stroke-accent" strokeWidth="1.6" />
-      <g className="stroke-accent" fill="none" strokeWidth="1.2">
-        <circle cx="372" cy="144" r="10" />
-        <path d="M372 128 v32 M356 144 h32" strokeOpacity="0.7" />
+      {/* line of sight and crosshair on Kyrgyzstan */}
+      <line x1={r1(OBJECTIVE.x)} y1={r1(OBJECTIVE.y)} x2={r1(TARGET.x)} y2={r1(TARGET.y)} className="th-beam stroke-accent" strokeWidth="1.6" />
+      {/* reticle as an eyepiece: Kyrgyzstan magnified inside the ring */}
+      <circle cx={r1(TARGET.x)} cy={r1(TARGET.y)} r={LOUPE_R} className="fill-bg2" fillOpacity="0.88" />
+      {kg && (
+        <g clipPath="url(#th-loupe-clip)">
+          <path
+            d={kg}
+            transform={`translate(${r1(TARGET.x)} ${r1(TARGET.y)}) scale(${LOUPE_ZOOM}) translate(${-r1(TARGET.x)} ${-r1(TARGET.y)})`}
+            className="fill-accent2 stroke-accent2"
+            fillOpacity="0.55"
+            strokeWidth="1.2"
+            vectorEffect="non-scaling-stroke"
+            strokeLinejoin="round"
+          />
+        </g>
+      )}
+      <g className="stroke-accent" fill="none" strokeWidth="1.3">
+        <circle cx={r1(TARGET.x)} cy={r1(TARGET.y)} r={LOUPE_R} strokeWidth="1.6" />
+        <circle cx={r1(TARGET.x)} cy={r1(TARGET.y)} r={LOUPE_R} className="th-ping" strokeOpacity="0.6" style={{ transformOrigin: `${r1(TARGET.x)}px ${r1(TARGET.y)}px` }} />
+        <path
+          d={`M${r1(TARGET.x)} ${r1(TARGET.y - LOUPE_R - 8)} v${LOUPE_R + 4} M${r1(TARGET.x)} ${r1(TARGET.y + 4)} v${LOUPE_R + 4} M${r1(TARGET.x - LOUPE_R - 8)} ${r1(TARGET.y)} h${LOUPE_R + 4} M${r1(TARGET.x + 4)} ${r1(TARGET.y)} h${LOUPE_R + 4}`}
+          strokeLinecap="round"
+          strokeOpacity="0.8"
+          strokeWidth="1"
+        />
       </g>
     </svg>
   );
