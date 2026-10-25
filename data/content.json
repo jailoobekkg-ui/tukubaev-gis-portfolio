@@ -549,7 +549,8 @@
       "map": {
         "center": null,
         "zoom": null,
-        "geojsonUrl": ""
+        "geojsonUrl": "",
+        "embedUrl": "/maps/border-map-en/index.html"
       },
       "published": true
     },
@@ -1545,7 +1546,8 @@
       "map": {
         "center": null,
         "zoom": null,
-        "geojsonUrl": ""
+        "geojsonUrl": "",
+        "embedUrl": "/maps/border-map-en/index.html"
       },
       "published": true
     },

@@ -12,13 +12,38 @@ const ProjectMap = dynamic(() => import("@/components/map/ProjectMap"), {
   loading: () => <div className="h-[360px] w-full animate-pulse rounded-xl bg-bg2" />,
 });
 
+/** A heavy ready-made web map: loaded only when the visitor asks for it. */
+function EmbeddedMap({ src, title }: { src: string; title: string }) {
+  const { t } = useI18n();
+  const [open, setOpen] = useState(false);
+  if (!open) {
+    return (
+      <div className="grid-bg flex h-[360px] flex-col items-center justify-center gap-3 rounded-xl border border-line/15 p-6 text-center">
+        <Icon name="layers" className="h-10 w-10 text-accent" />
+        <button type="button" onClick={() => setOpen(true)} className="btn-primary">
+          <Icon name="map" className="h-4 w-4" /> {t("map.load")}
+        </button>
+        <p className="max-w-sm text-xs text-muted">{t("map.loadNote")}</p>
+      </div>
+    );
+  }
+  return (
+    <div>
+      <iframe src={src} title={title} className="h-[70vh] min-h-[420px] w-full rounded-xl border border-line/15 bg-white" loading="lazy" />
+      <a href={src} target="_blank" rel="noopener" className="mt-2 inline-flex items-center gap-1 text-sm text-accent hover:underline">
+        <Icon name="external" className="h-4 w-4" /> {t("map.fullscreen")}
+      </a>
+    </div>
+  );
+}
+
 export function MapBlock({ settings, title }: { settings: MapSettings; title: string }) {
   return (
     <section className="card p-4">
       <h2 className="mb-3 flex items-center gap-2 px-1 font-display font-semibold">
         <Icon name="map" className="h-4 w-4 text-accent" /> {title}
       </h2>
-      <ProjectMap settings={settings} />
+      {settings.embedUrl ? <EmbeddedMap src={settings.embedUrl} title={title} /> : <ProjectMap settings={settings} />}
     </section>
   );
 }

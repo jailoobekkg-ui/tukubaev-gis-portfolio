@@ -60,6 +60,9 @@ const en = {
   "projects.gallery": "Gallery",
   "projects.noImages": "Images will be added by the owner.",
   "projects.map": "Project map",
+  "map.load": "Open the interactive map",
+  "map.loadNote": "The full map with all layers is about 50 MB, so it loads only on request.",
+  "map.fullscreen": "Open the map in a new tab",
   "projects.back": "Back to projects",
   "projects.other": "Other projects",
   "projects.disclaimer":

@@ -12,6 +12,8 @@ export type MapSettings = {
   zoom?: number | null;
   /** URL of a public GeoJSON file (e.g. uploaded via admin) */
   geojsonUrl?: string;
+  /** A ready-made web map (e.g. a qgis2web export in /public/maps) shown in an iframe instead of the default map */
+  embedUrl?: string;
 };
 
 export type Profile = {

@@ -61,6 +61,9 @@ const ru: Dict = {
   "projects.gallery": "Галерея",
   "projects.noImages": "Изображения будут добавлены владельцем.",
   "projects.map": "Карта проекта",
+  "map.load": "Открыть интерактивную карту",
+  "map.loadNote": "Полная карта со всеми слоями весит около 50 МБ, поэтому загружается только по кнопке.",
+  "map.fullscreen": "Открыть карту в новой вкладке",
   "projects.back": "Ко всем проектам",
   "projects.other": "Другие проекты",
   "projects.disclaimer":

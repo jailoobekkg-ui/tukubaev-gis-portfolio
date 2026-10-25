@@ -62,6 +62,9 @@ const ky: Dict = {
   "projects.gallery": "Галерея",
   "projects.noImages": "Сүрөттөрдү ээси кошот.",
   "projects.map": "Долбоордун картасы",
+  "map.load": "Интерактивдүү картаны ачуу",
+  "map.loadNote": "Бардык катмарлары бар толук карта болжол менен 50 МБ, ошондуктан баскыч басылганда гана жүктөлөт.",
+  "map.fullscreen": "Картаны жаңы өтмөктө ачуу",
   "projects.back": "Бардык долбоорлорго",
   "projects.other": "Башка долбоорлор",
   "projects.disclaimer":
