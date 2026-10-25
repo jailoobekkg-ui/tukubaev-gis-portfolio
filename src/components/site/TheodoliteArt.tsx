@@ -11,10 +11,12 @@ import { loadKyrgyzstan } from "@/components/map/layers";
 
 type View = { cx: number; cy: number; r: number; lon0: number; lat0: number };
 
-// Orthographic globe centred behind the instrument; its rotation puts Kyrgyzstan up-right of the telescope.
-const GLOBE: View = { cx: 200, cy: 128, r: 128, lon0: 12, lat0: 20 };
+// Orthographic globe in the middle of the frame, rotated so Kyrgyzstan is at its centre.
 const KG_CENTER = { lon: 74.7, lat: 41.3 };
-const PIVOT = { x: 200, y: 166 }; // telescope trunnion axis
+const GLOBE: View = { cx: 215, cy: 130, r: 118, lon0: KG_CENTER.lon, lat0: KG_CENTER.lat };
+// The instrument is drawn around x=200 and shifted left so its telescope looks up at the globe centre.
+const INSTRUMENT_DX = -70;
+const PIVOT = { x: 200 + INSTRUMENT_DX, y: 166 }; // telescope trunnion axis (frame coordinates)
 const rad = (d: number) => (d * Math.PI) / 180;
 const r1 = (n: number) => Math.round(n * 10) / 10;
 
@@ -56,7 +58,8 @@ const GRATICULE = [
 const TARGET = project(KG_CENTER.lon, KG_CENTER.lat);
 const AIM_DEG = (Math.atan2(TARGET.y - PIVOT.y, TARGET.x - PIVOT.x) * 180) / Math.PI;
 const LOUPE_R = 20;
-const OBJECTIVE = { x: PIVOT.x + 92 * Math.cos(rad(AIM_DEG)), y: PIVOT.y + 92 * Math.sin(rad(AIM_DEG)) };
+const OBJECTIVE_DIST = 48; // trunnion axis to objective lens
+const OBJECTIVE = { x: PIVOT.x + OBJECTIVE_DIST * Math.cos(rad(AIM_DEG)), y: PIVOT.y + OBJECTIVE_DIST * Math.sin(rad(AIM_DEG)) };
 // The eyepiece shows Kyrgyzstan face-on (no limb foreshortening), scaled to fill the ring.
 const LOUPE_VIEW: View = { cx: TARGET.x, cy: TARGET.y, r: 230, lon0: KG_CENTER.lon, lat0: KG_CENTER.lat };
 
@@ -115,7 +118,7 @@ export default function TheodoliteArt({ className = "" }: { className?: string }
       <rect width="400" height="480" fill="url(#th-glow)" />
       <g fill="none" className="stroke-accent" strokeOpacity="0.18">
         {[34, 62, 92, 124, 158].map((r, i) => (
-          <ellipse key={r} cx="200" cy="452" rx={r * 1.25} ry={r * 0.32} strokeWidth={i % 2 ? 0.8 : 1.3} />
+          <ellipse key={r} cx={200 + INSTRUMENT_DX} cy="452" rx={r * 1.25} ry={r * 0.32} strokeWidth={i % 2 ? 0.8 : 1.3} />
         ))}
       </g>
 
@@ -132,27 +135,29 @@ export default function TheodoliteArt({ className = "" }: { className?: string }
       </g>
 
       {/* horizontal-angle sweep */}
-      <g className="th-sweep" style={{ transformOrigin: "200px 166px" }}>
-        <path d="M200 166 L360 120 A166 166 0 0 1 366 176 Z" className="fill-accent" fillOpacity="0.07" />
+      <g className="th-sweep" style={{ transformOrigin: `${PIVOT.x}px ${PIVOT.y}px` }}>
+        <path d={`M${PIVOT.x} ${PIVOT.y} l160 -46 a166 166 0 0 1 6 56 Z`} className="fill-accent" fillOpacity="0.07" />
       </g>
       <g fill="none" className="stroke-accent" strokeOpacity="0.3">
-        <circle cx="200" cy="166" r="150" strokeDasharray="2 10" />
+        <circle cx={PIVOT.x} cy={PIVOT.y} r="150" strokeDasharray="2 10" />
         {ticks.map((a) => {
           const outer = 150;
           const inner = a % 90 === 0 ? 138 : 144;
           return (
             <line
               key={a}
-              x1={r1(200 + outer * Math.cos(rad(a)))}
-              y1={r1(166 + outer * Math.sin(rad(a)))}
-              x2={r1(200 + inner * Math.cos(rad(a)))}
-              y2={r1(166 + inner * Math.sin(rad(a)))}
+              x1={r1(PIVOT.x + outer * Math.cos(rad(a)))}
+              y1={r1(PIVOT.y + outer * Math.sin(rad(a)))}
+              x2={r1(PIVOT.x + inner * Math.cos(rad(a)))}
+              y2={r1(PIVOT.y + inner * Math.sin(rad(a)))}
               strokeWidth={a % 90 === 0 ? 1.6 : 0.8}
             />
           );
         })}
       </g>
 
+      {/* the instrument, drawn around x=200 and shifted into place */}
+      <g transform={`translate(${INSTRUMENT_DX} 0)`}>
       {/* plumb line to the ground mark */}
       <line x1="200" y1="292" x2="200" y2="452" className="stroke-accent2" strokeWidth="1" strokeDasharray="3 5" />
       <path d="M192 452 L200 440 L208 452 Z" className="fill-accent2" fillOpacity="0.85" />
@@ -198,18 +203,31 @@ export default function TheodoliteArt({ className = "" }: { className?: string }
         <circle cx="222" cy="214" r="6" className="fill-bg2" />
       </g>
 
-      {/* vertical circle + telescope, tilted towards Kyrgyzstan */}
+      {/* vertical circle + theodolite telescope (short barrel between the standards), tilted towards Kyrgyzstan */}
       <g className="stroke-accent" strokeWidth="1.6">
         <circle cx="200" cy="166" r="26" className="fill-bg2" />
         <circle cx="200" cy="166" r="26" fill="url(#th-body)" />
         <circle cx="200" cy="166" r="18" fill="none" strokeOpacity="0.6" strokeDasharray="1.5 3" />
-        <g transform={`rotate(${r1(AIM_DEG)} ${PIVOT.x} ${PIVOT.y})`}>
-          <rect x="118" y="155" width="168" height="22" rx="9" className="fill-bg2" />
-          <rect x="118" y="155" width="168" height="22" rx="9" fill="url(#th-body)" />
-          <rect x="104" y="158" width="16" height="16" rx="3" className="fill-bg2" />
-          <ellipse cx="288" cy="166" rx="7" ry="15" className="fill-accent" fillOpacity="0.35" />
+        <g transform={`rotate(${r1(AIM_DEG)} 200 166)`} strokeLinejoin="round">
+          {/* eyepiece: rubber cup + focusing knob */}
+          <rect x="150" y="159" width="8" height="14" rx="2" className="fill-bg2" />
+          <rect x="157" y="161" width="12" height="10" rx="1.5" className="fill-bg2" />
+          {/* main barrel */}
+          <path d="M168 156 L234 153 L234 179 L168 176 Z" className="fill-bg2" />
+          <path d="M168 156 L234 153 L234 179 L168 176 Z" fill="url(#th-body)" />
+          {/* focusing ring with knurling */}
+          <rect x="182" y="154" width="12" height="24" rx="2" className="fill-bg2" />
+          <path d="M185 155 v22 M188 155 v22 M191 155 v22" strokeWidth="0.8" strokeOpacity="0.7" />
+          {/* objective hood + lens */}
+          <path d="M234 151 L248 149 L248 183 L234 181 Z" className="fill-bg2" />
+          <path d="M234 151 L248 149 L248 183 L234 181 Z" fill="url(#th-body)" />
+          <ellipse cx="248" cy="166" rx="3.5" ry="15" className="fill-accent" fillOpacity="0.4" />
+          {/* optical sight (collimator) on top of the barrel */}
+          <path d="M196 154 L198 146 L226 145 L228 153" className="fill-bg2" />
+          <path d="M222 145 l3 -4 l3 4" fill="none" strokeWidth="1.2" />
         </g>
         <circle cx="200" cy="166" r="5" className="fill-accent" />
+      </g>
       </g>
 
       {/* line of sight and crosshair on Kyrgyzstan */}
