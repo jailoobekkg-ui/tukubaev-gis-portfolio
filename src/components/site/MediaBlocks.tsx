@@ -1,6 +1,5 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import Icon from "@/components/Icon";
 import Modal from "@/components/ui/Modal";
@@ -84,11 +83,6 @@ export function DocumentsBlock({ documents, title }: { documents: PageDocument[]
   );
 }
 
-const ProjectMap = dynamic(() => import("@/components/map/ProjectMap"), {
-  ssr: false,
-  loading: () => <div className="h-[360px] w-full animate-pulse rounded-xl bg-bg2" />,
-});
-
 /**
  * A heavy ready-made web map: loaded only when the visitor asks for it.
  * "{lang}" in the URL is replaced with the site language (en / ru / ky).
@@ -118,13 +112,15 @@ function EmbeddedMap({ src: template, title }: { src: string; title: string }) {
   );
 }
 
+/** Project map: shown only for a ready-made web map (embedUrl); there is no generic fallback map. */
 export function MapBlock({ settings, title }: { settings: MapSettings; title: string }) {
+  if (!settings.embedUrl) return null;
   return (
     <section className="card p-4">
       <h2 className="mb-3 flex items-center gap-2 px-1 font-display font-semibold">
         <Icon name="map" className="h-4 w-4 text-accent" /> {title}
       </h2>
-      {settings.embedUrl ? <EmbeddedMap src={settings.embedUrl} title={title} /> : <ProjectMap settings={settings} />}
+      <EmbeddedMap src={settings.embedUrl} title={title} />
     </section>
   );
 }

@@ -54,9 +54,9 @@ export function siteUrl() {
   }
 }
 
-/** True when a page has its own map content; an unset map would only show the generic Kyrgyzstan outline. */
+/** True when a page has a ready-made web map to show (the only kind of project map on the site). */
 export function hasOwnMap(map: MapSettings | undefined) {
-  return Boolean(map && (map.embedUrl || map.geojsonUrl || (map.center && map.center.length === 2)));
+  return Boolean(map?.embedUrl);
 }
 
 /** Bundled document scans ship with a "-thumb.jpg" preview; other images are used as-is. */

@@ -233,24 +233,12 @@ export function FieldEditor({ def, value, onChange }: { def: FieldDef; value: un
     }
     case "map": {
       const v = (value as MapSettings) ?? {};
-      const setCenter = (lat: string | number | undefined, lng: string | number | undefined) => {
-        const empty = (x: string | number | undefined) => x === undefined || x === "";
-        onChange({ ...v, center: empty(lat) && empty(lng) ? null : [Number(lat || 0), Number(lng || 0)] });
-      };
       return (
         <div>{head}
-          <div className="grid gap-2 sm:grid-cols-3">
-            {/* Committed on blur so partial input such as "42." can be typed. */}
-            <input className="input py-2" placeholder="Широта (lat)" inputMode="decimal" defaultValue={v.center?.[0] ?? ""} onBlur={(e) => setCenter(e.target.value, v.center?.[1])} />
-            <input className="input py-2" placeholder="Долгота (lng)" inputMode="decimal" defaultValue={v.center?.[1] ?? ""} onBlur={(e) => setCenter(v.center?.[0], e.target.value)} />
-            <input className="input py-2" placeholder="Масштаб (zoom)" type="number" value={v.zoom ?? ""} onChange={(e) => onChange({ ...v, zoom: e.target.value === "" ? null : Number(e.target.value) })} />
-          </div>
-          <div className="mt-2 flex flex-wrap items-center gap-2">
-            <input className="input flex-1 py-2" placeholder="GeoJSON URL (необязательно)" value={v.geojsonUrl ?? ""} onChange={(e) => onChange({ ...v, geojsonUrl: e.target.value })} />
-            <UploadButton accept=".geojson,.json,.kml,.gpx" label="GeoJSON" onUploaded={(u) => onChange({ ...v, geojsonUrl: u[0] })} />
-          </div>
-          <input className="input mt-2 py-2" placeholder="Готовая веб-карта (необязательно): /maps/…-{lang}/index.html — {lang} заменяется на en / ru / ky" value={v.embedUrl ?? ""} onChange={(e) => onChange({ ...v, embedUrl: e.target.value })} />
-          <p className="mt-1 text-[11px] text-muted">Пусто — карта всего Кыргызстана. Не загружайте служебные или ограниченные геоданные.</p>
+          <input id={id} className="input py-2" placeholder="/maps/…-{lang}/index.html — {lang} заменяется на en / ru / ky" value={v.embedUrl ?? ""} onChange={(e) => onChange({ ...v, embedUrl: e.target.value })} />
+          <p className="mt-1 text-[11px] text-muted">
+            Готовая веб-карта (например, экспорт qgis2web в папке public/maps). Пусто — блок карты на странице не показывается. Не публикуйте служебные или ограниченные геоданные.
+          </p>
         </div>
       );
     }
