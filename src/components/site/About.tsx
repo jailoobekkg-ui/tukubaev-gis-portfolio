@@ -39,17 +39,6 @@ export default function About({ content, locale }: { content: SiteContent; local
               ))}
             </ul>
           </Reveal>
-          <Reveal className="card p-5" delay={0.1}>
-            <h3 className="mb-3 font-display font-semibold">{t["about.languages"]}</h3>
-            <dl className="grid grid-cols-3 gap-3 text-sm">
-              {p.languages.map((l, i) => (
-                <div key={i} className="rounded-xl border border-line/10 p-3">
-                  <dt className="font-semibold">{tr(l.name, locale)}</dt>
-                  <dd className="text-xs text-muted">{tr(l.level, locale)}</dd>
-                </div>
-              ))}
-            </dl>
-          </Reveal>
         </div>
       </div>
 
