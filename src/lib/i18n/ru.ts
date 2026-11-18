@@ -90,6 +90,7 @@ const ru: Dict = {
   "topic.gis": "ГИС",
   "topic.remote-sensing": "ДЗЗ",
   "topic.uav": "БПЛА и фотограмметрия",
+  "topic.surveying": "Геодезия",
   "topic.programming": "Программирование",
   "topic.project-management": "Управление проектами",
 

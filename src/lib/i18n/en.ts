@@ -89,6 +89,7 @@ const en = {
   "topic.gis": "GIS",
   "topic.remote-sensing": "Remote Sensing",
   "topic.uav": "UAV & Photogrammetry",
+  "topic.surveying": "Geodesy & Surveying",
   "topic.programming": "Programming",
   "topic.project-management": "Project Management",
 

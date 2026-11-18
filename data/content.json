@@ -1343,6 +1343,41 @@
       "image": "/api/media/documents/cert-2023-wb-consultants.jpg",
       "imageApproved": true,
       "published": true
+    },
+    {
+      "id": "cert-2026-surveyor-qualification",
+      "title": {
+        "en": "State Qualification Certificate: Surveying Engineer for Construction",
+        "ru": "Государственный квалификационный сертификат: инженер-геодезист для целей строительства",
+        "ky": "Мамлекеттик квалификациялык сертификат: курулуш максаттары үчүн инженер-геодезист"
+      },
+      "issuer": {
+        "en": "Ministry of Construction, Architecture and Housing and Communal Services of the Kyrgyz Republic",
+        "ru": "Министерство строительства, архитектуры и жилищно-коммунального хозяйства Кыргызской Республики",
+        "ky": "Кыргыз Республикасынын Курулуш, архитектура жана турак жай-коммуналдык чарба министрлиги"
+      },
+      "date": {
+        "en": "12 November 2026",
+        "ru": "12 ноября 2026 г.",
+        "ky": "2026-жылдын 12-ноябры"
+      },
+      "year": 2026,
+      "location": {
+        "en": "Bishkek",
+        "ru": "Бишкек",
+        "ky": "Бишкек"
+      },
+      "topics": [
+        "surveying"
+      ],
+      "description": {
+        "en": "State certificate granting the right to practise as a surveying engineer for construction purposes. Status: active, valid until 12 November 2031.",
+        "ru": "Государственный сертификат на право профессиональной деятельности в качестве инженера-геодезиста для целей строительства. Статус: активный, действителен до 12 ноября 2031 г.",
+        "ky": "Курулуш максаттары үчүн инженер-геодезист катары кесиптик иш-аракетти аткарууга укук берген мамлекеттик сертификат. Статусу: активдүү, 2031-жылдын 12-ноябрына чейин жарактуу."
+      },
+      "image": "/api/media/documents/cert-2026-surveyor-qualification.jpg",
+      "imageApproved": true,
+      "published": true
     }
   ],
   "skills": [

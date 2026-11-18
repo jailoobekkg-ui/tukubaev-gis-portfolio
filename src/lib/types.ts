@@ -182,4 +182,4 @@ export const PORTFOLIO_CATEGORIES = [
   "water",
 ] as const;
 
-export const CERT_TOPICS = ["gis", "remote-sensing", "uav", "programming", "project-management"] as const;
+export const CERT_TOPICS = ["gis", "remote-sensing", "uav", "surveying", "programming", "project-management"] as const;

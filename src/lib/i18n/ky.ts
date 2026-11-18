@@ -91,6 +91,7 @@ const ky: Dict = {
   "topic.gis": "ГМС",
   "topic.remote-sensing": "ЖАЗ",
   "topic.uav": "Учкучсуз аппараттар жана фотограмметрия",
+  "topic.surveying": "Геодезия",
   "topic.programming": "Программалоо",
   "topic.project-management": "Долбоорлорду башкаруу",
 

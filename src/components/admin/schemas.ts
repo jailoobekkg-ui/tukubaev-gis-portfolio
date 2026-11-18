@@ -14,6 +14,7 @@ const TOPIC_LABELS: Record<string, string> = {
   gis: "ГИС",
   "remote-sensing": "ДЗЗ",
   uav: "БПЛА",
+  surveying: "Геодезия",
   programming: "Программирование",
   "project-management": "Управление проектами",
 };
