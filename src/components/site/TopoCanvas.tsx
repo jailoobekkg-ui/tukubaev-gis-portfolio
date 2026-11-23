@@ -49,7 +49,8 @@ export default function TopoCanvas({ className = "" }: { className?: string }) {
       for (let l = 0; l < LEVELS; l++) {
         const level = -1.7 + (3.4 * l) / (LEVELS - 1);
         const major = l % 5 === 0;
-        ctx.strokeStyle = dark ? `rgba(0,212,255,${major ? 0.32 : 0.14})` : `rgba(2,132,199,${major ? 0.3 : 0.13})`;
+        // thick (index) contours #691639, thin ones #887142
+        ctx.strokeStyle = major ? `rgba(105,22,57,${dark ? 0.9 : 0.5})` : `rgba(136,113,66,${dark ? 0.45 : 0.35})`;
         ctx.lineWidth = major ? 1.3 : 0.8;
         ctx.beginPath();
         for (let j = 0; j < rows - 1; j++) {
